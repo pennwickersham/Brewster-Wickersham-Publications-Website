@@ -23,8 +23,8 @@ need attention:
 
 1. **Amazon links** (2×) — the book and workbook. Replace `href="#"`, remove
    `class="disabled"`, change the label to "Buy on Amazon".
-2. **SootheQuest description** — a placeholder inferred from screenshot
-   filenames in the SootheQuest repo. Nothing there is confirmed.
+
+That is the only placeholder left. All three apps are live and linked.
 
 Colors are the CSS variables at the top of the `<style>` block, drawn from the
 logo: navy `#1a2b4a`, gold `#8a6a2b`, cream `#f8f4ea`. Changing those re-skins
@@ -34,6 +34,9 @@ the whole site, light and dark modes together.
 
 - **Module counts.** The workbook has 25 modules; the Resilient Path app's
   store listing says 24. These may genuinely differ — worth a look.
+- **Book subtitle.** This site and theresilientpathbook.com use *Managing Life
+  with Chronic Pain*. The SootheQuest App Store listing calls it *Modern
+  Strategies for Living with Chronic Pain*. One of them is stale.
 - **Share image.** `logo.jpg` (512×279) is serving as the Open Graph image.
   A purpose-made 1200×630 version would look better when the site is shared
   on social platforms.
