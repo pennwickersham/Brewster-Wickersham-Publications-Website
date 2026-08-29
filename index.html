@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Brewster Wickersham Publications</title>
+<meta name="description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
+
+<link rel="canonical" href="https://brewsterwickershampublications.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brewsterwickershampublications.com/">
+<meta property="og:title" content="Brewster Wickersham Publications">
+<meta property="og:description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
+<meta property="og:image" content="https://brewsterwickershampublications.com/logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+
+<style>
+/* ============================================================
+   COLORS — drawn from the logo: navy, gold, cream.
+   Change these to re-skin the entire site, both themes.
+   ============================================================ */
+:root{
+  --bg:      #f8f4ea;   /* cream, matching the logo background */
+  --surface: #ffffff;
+  --raised:  #f2ece0;
+  --ink:     #1a2b4a;   /* navy, from the logo lettering */
+  --muted:   #67614f;
+  --line:    #e2dac7;
+  --accent:  #8a6a2b;   /* deep gold, readable on cream */
+  --badge-bg:#efe7d4;
+  --badge-ink:#6f5420;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:      #12161f;
+    --surface: #1a1f2b;
+    --raised:  #212736;
+    --ink:     #e8e4d9;
+    --muted:   #9a9484;
+    --line:    #2b3240;
+    --accent:  #d4af6a;
+    --badge-bg:#241f14;
+    --badge-ink:#d4af6a;
+  }
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  font-weight:600; letter-spacing:-.015em; line-height:1.22;
+}
+a{color:var(--accent)}
+a:hover{text-decoration:none}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
+img{max-width:100%; height:auto; display:block}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px}
+
+.skip{position:absolute; left:-9999px; top:0; background:var(--accent); color:var(--bg);
+  padding:10px 16px; z-index:100}
+.skip:focus{left:0}
+
+/* ---------- header ---------- */
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex; align-items:center; gap:24px; flex-wrap:wrap;
+  padding-top:20px; padding-bottom:20px}
+.brand{display:block; line-height:0; border-radius:6px; overflow:hidden}
+.brand img{width:190px; height:auto}
+nav{margin-left:auto; display:flex; gap:22px; font-size:15.5px; flex-wrap:wrap}
+nav a{color:var(--muted); text-decoration:none}
+nav a:hover{color:var(--accent)}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 64px; border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(32px,5.5vw,50px); margin:0 0 22px; max-width:19ch}
+.hero .lede{font-size:clamp(18px,2.2vw,20.5px); color:var(--muted); margin:0; max-width:58ch}
+
+/* ---------- sections ---------- */
+section{padding:62px 0; border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12.5px; text-transform:uppercase; letter-spacing:.16em;
+  color:var(--muted); margin:0 0 10px; font-weight:600}
+section > .wrap > h2{font-size:clamp(25px,3.4vw,32px); margin:0 0 14px}
+.section-intro{color:var(--muted); margin:0 0 32px; max-width:62ch}
+
+/* ---------- product cards ---------- */
+.product{
+  background:var(--surface); border:1px solid var(--line); border-radius:11px;
+  padding:30px; margin-bottom:20px;
+}
+.product:last-child{margin-bottom:0}
+.product-head{display:flex; align-items:center; gap:13px; flex-wrap:wrap; margin-bottom:4px}
+.product h3{font-size:23px; margin:0}
+.product .sub{color:var(--muted); font-size:15.5px; margin:3px 0 16px}
+.product p{margin:0 0 16px; max-width:64ch}
+.product > p:last-child{margin-bottom:0}
+
+.badge{
+  display:inline-block; background:var(--badge-bg); color:var(--badge-ink);
+  font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  padding:5px 10px; border-radius:99px; white-space:nowrap; line-height:1;
+}
+.badge.soon{background:transparent; color:var(--muted); border:1px solid var(--line)}
+
+ul.feat{margin:0 0 18px; padding-left:20px; color:var(--muted)}
+ul.feat li{margin:6px 0}
+ul.feat b{color:var(--ink); font-weight:600}
+
+.price{font-size:15px; color:var(--muted); margin:0 0 18px}
+.price strong{color:var(--ink); font-weight:600}
+
+/* ---------- buttons ---------- */
+.actions{display:flex; gap:11px; flex-wrap:wrap; margin-top:2px}
+.btn{
+  display:inline-block; padding:11px 20px; border-radius:7px; text-decoration:none;
+  font-size:15.5px; border:1px solid var(--accent); color:var(--accent);
+  transition:background .15s, color .15s;
+}
+.btn:hover{background:var(--accent); color:var(--bg)}
+.btn.solid{background:var(--accent); color:var(--bg)}
+.btn.solid:hover{opacity:.87}
+.btn.disabled{border-color:var(--line); color:var(--muted); pointer-events:none; opacity:.75}
+
+/* ---------- authors ---------- */
+.authors{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.author{background:var(--raised); border:1px solid var(--line); border-radius:11px; padding:26px}
+.author h3{font-size:19.5px; margin:0 0 3px}
+.author .creds{font-size:14px; color:var(--muted); margin:0 0 14px}
+.author p{font-size:15.5px; margin:0 0 12px}
+.author p:last-child{margin-bottom:0}
+
+.contact-email{font-size:clamp(19px,2.6vw,24px); word-break:break-word}
+
+footer{padding:38px 0 58px; font-size:14.5px; color:var(--muted)}
+footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+footer a{color:var(--muted)}
+
+@media (max-width:620px){
+  .hero{padding:54px 0 46px}
+  section{padding:46px 0}
+  .product{padding:24px}
+  .brand img{width:160px}
+  nav{width:100%; margin-left:0; gap:16px}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="logo.jpg" alt="Brewster Wickersham Publications" width="512" height="279">
+    </a>
+    <nav>
+      <a href="#books">Books</a>
+      <a href="#apps">Apps</a>
+      <a href="#authors">Authors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Tools for living well with chronic pain.</h1>
+    <p class="lede">An independent press publishing books, workbooks, and
+      applications grounded in the biopsychosocial model of pain &mdash;
+      created by clinicians who live with chronic illness themselves.</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     BOOKS
+     ============================================================ -->
+<section id="books">
+  <div class="wrap">
+    <p class="eyebrow">The Resilient Path</p>
+    <h2>Books</h2>
+    <p class="section-intro">A guide that shifts the focus from getting rid of
+      symptoms to living well &mdash; through the cultivation of deep physical
+      and emotional resilience.</p>
+
+    <article class="product">
+      <div class="product-head">
+        <h3>The Resilient Path</h3>
+        <span class="badge">Book</span>
+      </div>
+      <p class="sub">Managing Life with Chronic Pain &middot; Pendleton B. Wickersham, MD, and Louise Locker, LCSW</p>
+      <p>The Resilient Path redefines the experience of chronic pain by shifting
+        the focus from getting rid of symptoms to living well through the
+        cultivation of deep physical and emotional resilience. Grounded in the
+        biopsychosocial model of pain, it draws on both clinical expertise and
+        lived experience.</p>
+      <div class="actions">
+        <!-- ============================================================
+             EDIT ME — Amazon listing for the BOOK.
+             When live: replace href="#" with the Amazon URL, delete the
+             class "disabled", and change the text to "Buy on Amazon".
+             ============================================================ -->
+        <a class="btn disabled" href="#">Amazon &mdash; coming soon</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-head">
+        <h3>The Resilient Path Workbook</h3>
+        <span class="badge">Workbook</span>
+      </div>
+      <p class="sub">Pendleton B. Wickersham, MD, and Louise Locker, LCSW</p>
+      <p>Twenty-five guided modules that turn the book&rsquo;s ideas into daily
+        practice:</p>
+      <ul class="feat">
+        <li>Understanding pain</li>
+        <li>Mapping its effects on your life</li>
+        <li>Working with professional care</li>
+        <li>Self-management strategies</li>
+        <li>Living fully alongside pain</li>
+      </ul>
+      <div class="actions">
+        <!-- EDIT ME — Amazon listing for the WORKBOOK. Same as above. -->
+        <a class="btn disabled" href="#">Amazon &mdash; coming soon</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     APPS
+     ============================================================ -->
+<section id="apps">
+  <div class="wrap">
+    <p class="eyebrow">Applications</p>
+    <h2>Apps</h2>
+    <p class="section-intro">Digital companions that carry the same approach
+      beyond the page. Built by Wickersham Development Group, LLC.</p>
+
+    <article class="product">
+      <div class="product-head">
+        <h3>Resilient Path</h3>
+        <span class="badge">Available now</span>
+      </div>
+      <p class="sub">iOS and Android</p>
+      <p>A comprehensive workbook companion for navigating life&rsquo;s most
+        challenging moments, developed in consultation with mental health
+        professionals.</p>
+      <ul class="feat">
+        <li><b>24 interactive modules</b> &mdash; guided reflections at your own pace</li>
+        <li><b>Health tools</b> &mdash; track medications, log symptoms, monitor well-being</li>
+        <li><b>AI companion</b> &mdash; supportive, evidence-informed guidance</li>
+        <li><b>Emergency guidance</b> &mdash; quick access to the 988 Suicide and Crisis Lifeline</li>
+        <li><b>Private by default</b> &mdash; responses saved locally on your device</li>
+      </ul>
+      <p class="price">Free to download &middot; 7-day free trial, then <strong>$3.99/month</strong></p>
+      <div class="actions">
+        <a class="btn solid" href="https://apps.apple.com/us/app/resilient-path/id6762085688">App&nbsp;Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=resilient.path.app">Google&nbsp;Play</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-head">
+        <h3>RheumCompanion</h3>
+        <span class="badge">Available now</span>
+      </div>
+      <p class="sub">iOS and Android &middot; Free</p>
+      <p>A trusted companion for understanding and managing rheumatologic
+        conditions, designed with input from a board-certified rheumatologist.
+        Evidence-based information drawn from FDA drug labels and PubMed
+        research.</p>
+      <ul class="feat">
+        <li><b>Disease encyclopedia</b> &mdash; 13 conditions including RA, lupus, psoriatic arthritis, ankylosing spondylitis, gout, Sj&ouml;gren&rsquo;s, and vasculitis</li>
+        <li><b>Medication reference</b> &mdash; 7 drug classes with FDA package insert information</li>
+        <li><b>RheumBot</b> &mdash; AI-powered Q&amp;A with sourced, plain-language answers</li>
+        <li><b>Drug interaction checker</b> &mdash; reports grouped by severity with clinical explanations</li>
+        <li><b>Symptom &amp; flare tracker</b> &mdash; exportable 30-day reports for your care team</li>
+        <li><b>Clinical trial finder</b></li>
+      </ul>
+      <div class="actions">
+        <a class="btn solid" href="https://apps.apple.com/us/app/rheumcompanion/id6784212388">App&nbsp;Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.rheumcompanion.app">Google&nbsp;Play</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-head">
+        <h3>SootheQuest</h3>
+        <span class="badge soon">In development</span>
+      </div>
+      <!-- ============================================================
+           EDIT ME — SootheQuest description. This is a placeholder
+           inferred from screenshot filenames in the GitHub repo; the app
+           has no public store listing yet, so none of it is confirmed.
+           Replace with real copy, then swap the button for store links.
+           ============================================================ -->
+      <p>A calming companion app built around breathing exercises, a zen
+        garden, and reflective journaling. Coming soon.</p>
+      <div class="actions">
+        <a class="btn disabled" href="#">Coming soon</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     AUTHORS
+     ============================================================ -->
+<section id="authors">
+  <div class="wrap">
+    <p class="eyebrow">Authors</p>
+    <h2>Who writes our books</h2>
+
+    <div class="authors">
+      <div class="author">
+        <h3>Pendleton B. Wickersham, MD</h3>
+        <p class="creds">FACP, FACR &middot; Board-certified rheumatologist</p>
+        <p>Diagnosed with ankylosing spondylitis at age 22, Dr. Wickersham
+          brings both clinical expertise and personal experience to the
+          understanding of chronic pain.</p>
+        <p>Outside of medicine he is a rockhound and a fisherman.</p>
+      </div>
+
+      <div class="author">
+        <h3>Louise Locker, LCSW</h3>
+        <p class="creds">Counselor and community leader</p>
+        <p>Louise has spent decades helping people navigate life&rsquo;s
+          challenges with courage and compassion, informed by her own journey
+          with arthritis and chronic pain.</p>
+        <p>She is drawn to music, photography, and community work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Get in touch</h2>
+    <p class="contact-email">
+      <a href="mailto:info@brewsterwickershampublications.com">info@brewsterwickershampublications.com</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; <span id="year">2026</span> Brewster Wickersham Publications</div>
+    <div><a href="https://www.theresilientpathbook.com">theresilientpathbook.com</a></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

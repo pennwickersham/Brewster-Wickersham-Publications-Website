@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found &middot; Brewster Wickersham Publications</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<style>
+:root{
+  --bg:#faf8f4; --ink:#1b1a17; --muted:#6a655c; --accent:#2f6b63;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#15171a; --ink:#e9e6e0; --muted:#9d978c; --accent:#6fbfb2; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  padding:24px;
+}
+h1{
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-size:clamp(28px,5vw,40px); font-weight:600; margin:0 0 14px; letter-spacing:-.015em;
+}
+p{color:var(--muted); margin:0 0 28px; max-width:44ch}
+a.btn{
+  display:inline-block; padding:11px 22px; border-radius:7px; text-decoration:none;
+  border:1px solid var(--accent); color:var(--accent);
+}
+a.btn:hover{background:var(--accent); color:var(--bg)}
+</style>
+</head>
+<body>
+  <div>
+    <h1>Page not found</h1>
+    <p>That page doesn&rsquo;t exist &mdash; it may have moved, or the link may
+       have been mistyped.</p>
+    <a class="btn" href="/">Return home</a>
+  </div>
+</body>
+</html>
