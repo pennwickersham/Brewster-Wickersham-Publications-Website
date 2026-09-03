@@ -3,21 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
 <title>Brewster Wickersham Publications</title>
 <meta name="description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
-
 <link rel="canonical" href="https://brewsterwickershampublications.com/">
-
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://brewsterwickershampublications.com/">
 <meta property="og:title" content="Brewster Wickersham Publications">
 <meta property="og:description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
 <meta property="og:image" content="https://brewsterwickershampublications.com/logo.jpg">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
-
 <style>
 /* ============================================================
    COLORS — drawn from the logo: navy, gold, cream.
@@ -47,7 +42,6 @@
     --badge-ink:#d4af6a;
   }
 }
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -64,15 +58,14 @@ a:hover{text-decoration:none}
 :focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
 img{max-width:100%; height:auto; display:block}
 .wrap{max-width:900px; margin:0 auto; padding:0 24px}
-
 .skip{position:absolute; left:-9999px; top:0; background:var(--accent); color:var(--bg);
-  padding:10px 16px; z-index:100}
+      padding:10px 16px; z-index:100}
 .skip:focus{left:0}
 
 /* ---------- header ---------- */
 header{border-bottom:1px solid var(--line)}
 header .wrap{display:flex; align-items:center; gap:24px; flex-wrap:wrap;
-  padding-top:20px; padding-bottom:20px}
+             padding-top:20px; padding-bottom:20px}
 .brand{display:block; line-height:0; border-radius:6px; overflow:hidden}
 .brand img{width:190px; height:auto}
 nav{margin-left:auto; display:flex; gap:22px; font-size:15.5px; flex-wrap:wrap}
@@ -87,7 +80,7 @@ nav a:hover{color:var(--accent)}
 /* ---------- sections ---------- */
 section{padding:62px 0; border-bottom:1px solid var(--line)}
 .eyebrow{font-size:12.5px; text-transform:uppercase; letter-spacing:.16em;
-  color:var(--muted); margin:0 0 10px; font-weight:600}
+         color:var(--muted); margin:0 0 10px; font-weight:600}
 section > .wrap > h2{font-size:clamp(25px,3.4vw,32px); margin:0 0 14px}
 .section-intro{color:var(--muted); margin:0 0 32px; max-width:62ch}
 
@@ -102,18 +95,15 @@ section > .wrap > h2{font-size:clamp(25px,3.4vw,32px); margin:0 0 14px}
 .product .sub{color:var(--muted); font-size:15.5px; margin:3px 0 16px}
 .product p{margin:0 0 16px; max-width:64ch}
 .product > p:last-child{margin-bottom:0}
-
 .badge{
   display:inline-block; background:var(--badge-bg); color:var(--badge-ink);
   font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
   padding:5px 10px; border-radius:99px; white-space:nowrap; line-height:1;
 }
 .badge.soon{background:transparent; color:var(--muted); border:1px solid var(--line)}
-
 ul.feat{margin:0 0 18px; padding-left:20px; color:var(--muted)}
 ul.feat li{margin:6px 0}
 ul.feat b{color:var(--ink); font-weight:600}
-
 .price{font-size:15px; color:var(--muted); margin:0 0 18px}
 .price strong{color:var(--ink); font-weight:600}
 
@@ -153,7 +143,6 @@ footer a{color:var(--muted)}
 </style>
 </head>
 <body>
-
 <a class="skip" href="#main">Skip to content</a>
 
 <header>
@@ -203,13 +192,10 @@ footer a{color:var(--muted)}
         cultivation of deep physical and emotional resilience. Grounded in the
         biopsychosocial model of pain, it draws on both clinical expertise and
         lived experience.</p>
+      <p class="price">Available in <strong>paperback</strong> and for <strong>Kindle</strong></p>
       <div class="actions">
-        <!-- ============================================================
-             EDIT ME — Amazon listing for the BOOK.
-             When live: replace href="#" with the Amazon URL, delete the
-             class "disabled", and change the text to "Buy on Amazon".
-             ============================================================ -->
-        <a class="btn disabled" href="#">Amazon &mdash; coming soon</a>
+        <a class="btn solid js-amazon" data-book="book" href="#">Paperback on Amazon</a>
+        <a class="btn js-amazon" data-book="kindle" href="#">Kindle edition</a>
       </div>
     </article>
 
@@ -229,8 +215,7 @@ footer a{color:var(--muted)}
         <li>Living fully alongside pain</li>
       </ul>
       <div class="actions">
-        <!-- EDIT ME — Amazon listing for the WORKBOOK. Same as above. -->
-        <a class="btn disabled" href="#">Amazon &mdash; coming soon</a>
+        <a class="btn solid js-amazon" data-book="workbook" href="#">Paperback on Amazon</a>
       </div>
     </article>
   </div>
@@ -327,7 +312,6 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <p class="eyebrow">Authors</p>
     <h2>Who writes our books</h2>
-
     <div class="authors">
       <div class="author">
         <h3>Pendleton B. Wickersham, MD</h3>
@@ -337,7 +321,6 @@ footer a{color:var(--muted)}
           understanding of chronic pain.</p>
         <p>Outside of medicine he is a rockhound and a fisherman.</p>
       </div>
-
       <div class="author">
         <h3>Louise Locker, LCSW</h3>
         <p class="creds">Counselor and community leader</p>
@@ -373,7 +356,43 @@ footer a{color:var(--muted)}
 </footer>
 
 <script>
+/* ============================================================
+   AMAZON LINKS — the only listing URLs on this page.
+
+   Use the plain product form: https://www.amazon.com/dp/ASIN
+   (strip everything after the ASIN — no /ref=, no ?tag=, no
+   search-session parameters). Any entry left empty renders as a
+   non-clickable "coming soon" button rather than a dead link.
+   ============================================================ */
+const AMAZON = {
+  book:     "https://www.amazon.com/dp/B0HHLCHTRC",   // The Resilient Path — paperback
+  kindle:   "https://www.amazon.com/dp/B0HHKKSR3D",   // The Resilient Path — Kindle edition
+  workbook: "https://www.amazon.com/dp/B0HHLCSVBJ"    // The Resilient Path Workbook — paperback
+};
+
+(function () {
+  const LABEL = {
+    book:     'Paperback — coming soon',
+    kindle:   'Kindle edition — coming soon',
+    workbook: 'Paperback — coming soon'
+  };
+
+  document.querySelectorAll('.js-amazon').forEach(function (el) {
+    const url = AMAZON[el.dataset.book];
+    if (url) {
+      el.href = url;
+      el.target = '_blank';
+      el.rel = 'noopener';
+      el.classList.remove('disabled');
+    } else {
+      el.classList.add('disabled');
+      el.removeAttribute('href');
+      el.textContent = LABEL[el.dataset.book] || 'Coming soon';
+    }
+  });
+
   document.getElementById('year').textContent = new Date().getFullYear();
+})();
 </script>
 </body>
 </html>
