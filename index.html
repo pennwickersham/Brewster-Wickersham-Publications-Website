@@ -129,6 +129,20 @@ ul.feat b{color:var(--ink); font-weight:600}
 
 .contact-email{font-size:clamp(19px,2.6vw,24px); word-break:break-word}
 
+/* ---- Friends: outside businesses we point people to, with ownership stated ---- */
+.friends{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.friend{background:var(--raised); border:1px solid var(--line); border-radius:11px; padding:26px}
+.friend h3{font-size:19.5px; margin:0 0 3px}
+.friend .creds{font-size:14px; color:var(--muted); margin:0 0 14px}
+.friend p{font-size:15.5px; margin:0 0 12px}
+.friend ul{margin:0 0 16px 18px; padding:0; font-size:15.5px}
+.friend li{margin:0 0 5px}
+.disclosure{border-left:3px solid var(--accent); background:var(--surface);
+  padding:15px 18px; border-radius:0 8px 8px 0; margin:18px 0 16px}
+.disclosure b{display:block; font-size:14px; color:var(--accent); margin-bottom:6px}
+.disclosure p{font-size:14.5px; color:var(--muted); margin:0 0 9px; line-height:1.55}
+.disclosure p:last-child{margin-bottom:0}
+
 footer{padding:38px 0 58px; font-size:14.5px; color:var(--muted)}
 footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
 footer a{color:var(--muted)}
@@ -154,6 +168,7 @@ footer a{color:var(--muted)}
       <a href="#books">Books</a>
       <a href="#apps">Apps</a>
       <a href="#authors">Authors</a>
+      <a href="#friends">Friends</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -268,22 +283,27 @@ footer a{color:var(--muted)}
         <h3>RheumCompanion</h3>
         <span class="badge">Available now</span>
       </div>
-      <p class="sub">iOS and Android &middot; Free</p>
-      <p>A trusted companion for understanding and managing rheumatologic
-        conditions, designed with input from a board-certified rheumatologist.
-        Evidence-based information drawn from FDA drug labels and PubMed
-        research.</p>
+      <p class="sub">iOS and Android</p>
+      <p>A flare tracker first. Flares are the thing that actually changes your
+        treatment, and they are the hardest thing to describe accurately eight weeks
+        later at an appointment. RheumCompanion captures one while it is happening
+        &mdash; severity, duration, what preceded it &mdash; and turns a season of
+        scattered impressions into a record your rheumatologist can read in a minute.</p>
       <ul class="feat">
-        <li><b>Disease encyclopedia</b> &mdash; 13 conditions including RA, lupus, psoriatic arthritis, ankylosing spondylitis, gout, Sj&ouml;gren&rsquo;s, and vasculitis</li>
-        <li><b>Medication reference</b> &mdash; 7 drug classes with FDA package insert information</li>
-        <li><b>RheumBot</b> &mdash; AI-powered Q&amp;A with sourced, plain-language answers</li>
-        <li><b>Drug interaction checker</b> &mdash; reports grouped by severity with clinical explanations</li>
-        <li><b>Symptom &amp; flare tracker</b> &mdash; exportable 30-day reports for your care team</li>
-        <li><b>Clinical trial finder</b></li>
+        <li><b>Flare tracking</b> &mdash; log a flare as it happens, with severity and duration, while the details are still accurate</li>
+        <li><b>Daily symptoms and joint pain</b> &mdash; pain, fatigue, and stiffness in a few taps, on the days you can manage it</li>
+        <li><b>Diet and symptom correlation</b> &mdash; see what lines up with your flares over enough days to mean something</li>
+        <li><b>Medications and biologic infusion dates</b> &mdash; your regimen and schedule alongside the symptom record, so changes and flares sit on the same timeline</li>
+        <li><b>Lab history</b> &mdash; results kept together, where a trend is visible</li>
+        <li><b>Appointment summary</b> &mdash; export a 30-day report to hand your care team at the start of a visit</li>
+        <li><b>Disease encyclopedia and medication reference</b> &mdash; 13 conditions and 7 drug classes, drawn from FDA package inserts and PubMed research</li>
+        <li><b>RheumBot, interaction checker, and clinical trial finder</b> &mdash; sourced answers, interactions grouped by severity, and what is recruiting for your condition</li>
       </ul>
+      <p class="price">Free to download &middot; 7-day free trial, then <strong>$6.99/month</strong> &middot; cancel anytime</p>
       <div class="actions">
-        <a class="btn solid" href="https://apps.apple.com/us/app/rheumcompanion/id6784212388">App&nbsp;Store</a>
+        <a class="btn solid" href="https://apps.apple.com/us/app/rheumcompanion-flare-tracker/id6784212388">App&nbsp;Store</a>
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.rheumcompanion.app">Google&nbsp;Play</a>
+        <a class="btn" href="https://www.rheumcompanion.com">rheumcompanion.com</a>
       </div>
     </article>
 
@@ -337,6 +357,49 @@ footer a{color:var(--muted)}
           challenges with courage and compassion, informed by her own journey
           with arthritis and chronic pain.</p>
         <p>She is drawn to music, photography, and community work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FRIENDS
+     Outside businesses. Ownership interests are stated in full.
+     ============================================================ -->
+<section id="friends">
+  <div class="wrap">
+    <p class="eyebrow">Friends</p>
+    <h2>Businesses we recommend</h2>
+
+    <div class="friends">
+      <div class="friend">
+        <h3>Restore Biosciences</h3>
+        <p class="creds">takerestore.com &middot; Curated supplements and medical supplies</p>
+        <p>Walk into a big-box pharmacy and you face a wall of supplement bottles
+          with wildly varying quality and no one to ask. Restore Biosciences does the opposite:
+          a small, physician-reviewed catalog, medical-grade supplies from
+          FDA-registered manufacturers, and a certified wellness coach on staff who
+          will actually talk through how a product works and where it might interact
+          with a prescription.</p>
+        <ul>
+          <li>Supplements vetted before they earn a place in the catalog</li>
+          <li>Mobility and daily-living supplies &mdash; walkers, canes, supports</li>
+          <li>A coach who will review your supplements and your needs</li>
+        </ul>
+
+        <div class="disclosure">
+          <b>Ownership disclosure</b>
+          <p>Dr. Wickersham provided founding capital for Restore Biosciences and
+            retains a partial ownership interest.</p>
+          <p>Supplements are not medications and are not reviewed by the FDA the way
+            prescription drugs are. Nothing Restore Biosciences sells is part of any treatment
+            plan from Arthritis Associates or from Dr. Wickersham, and buying from
+            Restore will never affect your care. Talk to your own clinician before
+            starting any supplement, particularly if you take a biologic,
+            methotrexate, or a blood thinner.</p>
+        </div>
+
+        <p><a href="https://takerestore.com">Visit takerestore.com</a></p>
       </div>
     </div>
   </div>
