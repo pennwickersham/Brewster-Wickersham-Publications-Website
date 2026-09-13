@@ -132,6 +132,7 @@ ul.feat b{color:var(--ink); font-weight:600}
 /* ---- Friends: outside businesses we point people to, with ownership stated ---- */
 .friends{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .friend{background:var(--raised); border:1px solid var(--line); border-radius:11px; padding:26px}
+.friend-logo{display:block; max-width:150px; width:100%; height:auto; margin:0 0 18px}
 .friend h3{font-size:19.5px; margin:0 0 3px}
 .friend .creds{font-size:14px; color:var(--muted); margin:0 0 14px}
 .friend p{font-size:15.5px; margin:0 0 12px}
@@ -312,11 +313,13 @@ footer a{color:var(--muted)}
         <h3>SootheQuest</h3>
         <span class="badge">Available now</span>
       </div>
-      <p class="sub">iOS and Android &middot; Free</p>
+      <p class="sub">iOS and Android</p>
       <p>A match-3 puzzle game built from the ground up for people living with
         chronic illness and chronic pain &mdash; and for anyone who wants a game
         that respects their energy. Genuinely engaging puzzles, with every
-        pressure mechanic deliberately removed.</p>
+        pressure mechanic deliberately removed. Nothing is locked behind a
+        purchase: all 72 levels across nine worlds are playable free, start
+        to finish.</p>
       <ul class="feat">
         <li><b>A rest-friendly streak</b> &mdash; it counts the days you show up, forgives rest days, and losing never breaks it</li>
         <li><b>The Zen Garden</b> &mdash; a no-fail sanctuary mode. No moves, no timer, no losing</li>
@@ -324,11 +327,15 @@ footer a{color:var(--muted)}
         <li><b>A gentle boost</b> &mdash; struggling with a level? The game quietly offers a little extra room, no judgment</li>
         <li><b>Real encouragement</b> &mdash; a line from The Resilient Path after each level, saved to your Comfort Journal</li>
         <li><b>The Calm Corner</b> &mdash; guided box breathing with rain and wave soundscapes</li>
-        <li><b>Comfort &amp; Access</b> &mdash; larger gems and tap-only controls for steady hands</li>
+        <li><b>Comfort &amp; Access</b> &mdash; larger gems, tap-only controls, and a gentle battle clock that adds time to boss levels</li>
       </ul>
+      <p class="price">Free to play, start to finish &middot; optional Soothe Plus
+        (<strong>$3.99/month</strong> or <strong>$34.99/year</strong>, 7-day free trial)
+        adds unlimited lives and comfort perks &mdash; every level is playable without it</p>
       <div class="actions">
         <a class="btn solid" href="https://apps.apple.com/us/app/soothequest/id6791187064">App&nbsp;Store</a>
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest">Google&nbsp;Play</a>
+        <a class="btn" href="https://www.soothequest.com">soothequest.com</a>
       </div>
     </article>
   </div>
@@ -373,6 +380,7 @@ footer a{color:var(--muted)}
 
     <div class="friends">
       <div class="friend">
+        <img class="friend-logo" src="friend-restore.png" alt="Restore Biosciences">
         <h3>Restore Biosciences</h3>
         <p class="creds">takerestore.com &middot; Curated supplements and medical supplies</p>
         <p>Walk into a big-box pharmacy and you face a wall of supplement bottles
@@ -400,6 +408,25 @@ footer a{color:var(--muted)}
         </div>
 
         <p><a href="https://takerestore.com">Visit takerestore.com</a></p>
+      </div>
+
+      <div class="friend">
+        <img class="friend-logo" src="friend-ecates.png" alt="E. Cates Designs">
+        <h3>E. Cates Designs</h3>
+        <p class="creds">ecatesdesigns.square.site &middot; Handmade jewelry and gifts</p>
+        <p>Eleanor Cates makes stylish jewelry and small gifts by hand &mdash; scarf
+          necklaces layering patterned silk with beads and a charm, and pieces like a
+          gold cross set in a clear acrylic block. Most things run $20 to $30, so it
+          does not take an occasion to justify one.</p>
+
+        <div class="disclosure">
+          <b>Relationship disclosure</b>
+          <p>Eleanor Cates is Dr. Wickersham&rsquo;s sister. Neither he nor Brewster
+            Wickersham Publications holds any financial interest in E. Cates Designs
+            or receives anything from purchases made there.</p>
+        </div>
+
+        <p><a href="https://ecatesdesigns.square.site/">Visit ecatesdesigns.square.site</a></p>
       </div>
     </div>
   </div>
