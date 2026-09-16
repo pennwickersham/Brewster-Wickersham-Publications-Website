@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leave a review &mdash; Brewster Wickersham Publications</title>
+<meta name="description" content="Rate or review The Resilient Path, the workbook, and the Resilient Path, RheumCompanion, and SootheQuest apps.">
+<link rel="canonical" href="https://brewsterwickershampublications.com/review/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brewsterwickershampublications.com/review/">
+<meta property="og:title" content="Leave a review — Brewster Wickersham Publications">
+<meta property="og:description" content="Rate or review The Resilient Path, the workbook, and the Resilient Path, RheumCompanion, and SootheQuest apps.">
+<meta property="og:image" content="https://brewsterwickershampublications.com/logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<style>
+/* ============================================================
+   COLORS — same tokens as the home page. Keep these in sync if
+   the site is ever re-skinned.
+   ============================================================ */
+:root{
+  --bg:      #f8f4ea;
+  --surface: #ffffff;
+  --raised:  #f2ece0;
+  --ink:     #1a2b4a;
+  --muted:   #67614f;
+  --line:    #e2dac7;
+  --accent:  #8a6a2b;
+  --badge-bg:#efe7d4;
+  --badge-ink:#6f5420;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:      #12161f;
+    --surface: #1a1f2b;
+    --raised:  #212736;
+    --ink:     #e8e4d9;
+    --muted:   #9a9484;
+    --line:    #2b3240;
+    --accent:  #d4af6a;
+    --badge-bg:#241f14;
+    --badge-ink:#d4af6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  font-weight:600; letter-spacing:-.015em; line-height:1.22;
+}
+a{color:var(--accent)}
+a:hover{text-decoration:none}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
+img{max-width:100%; height:auto; display:block}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px}
+.skip{position:absolute; left:-9999px; top:0; background:var(--accent); color:var(--bg);
+      padding:10px 16px; z-index:100}
+.skip:focus{left:0}
+
+/* ---------- header ---------- */
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex; align-items:center; gap:24px; flex-wrap:wrap;
+             padding-top:20px; padding-bottom:20px}
+.brand{display:block; line-height:0; border-radius:6px; overflow:hidden}
+.brand img{width:190px; height:auto}
+nav{margin-left:auto; display:flex; gap:22px; font-size:15.5px; flex-wrap:wrap}
+nav a{color:var(--muted); text-decoration:none}
+nav a:hover{color:var(--accent)}
+
+/* ---------- hero ---------- */
+.hero{padding:70px 0 58px; border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(32px,5.5vw,50px); margin:0 0 22px; max-width:17ch}
+.hero .lede{font-size:clamp(18px,2.2vw,20.5px); color:var(--muted); margin:0 0 14px; max-width:58ch}
+.hero .lede:last-child{margin-bottom:0}
+
+/* ---------- sections ---------- */
+section{padding:56px 0; border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12.5px; text-transform:uppercase; letter-spacing:.16em;
+         color:var(--muted); margin:0 0 10px; font-weight:600}
+section > .wrap > h2{font-size:clamp(25px,3.4vw,32px); margin:0 0 14px}
+.section-intro{color:var(--muted); margin:0 0 30px; max-width:62ch}
+
+/* ---------- review cards ---------- */
+.item{
+  background:var(--surface); border:1px solid var(--line); border-radius:11px;
+  padding:26px 28px; margin-bottom:18px;
+  display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;
+}
+.item:last-child{margin-bottom:0}
+.item .icon{width:64px; height:64px; border-radius:14px; border:1px solid var(--line); flex:none}
+.item .body{flex:1 1 300px; min-width:0}
+.item h3{font-size:22px; margin:0 0 3px}
+.item .sub{color:var(--muted); font-size:15.5px; margin:0 0 16px}
+.badge{
+  display:inline-block; background:var(--badge-bg); color:var(--badge-ink);
+  font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  padding:5px 10px; border-radius:99px; white-space:nowrap; line-height:1; vertical-align:2px;
+}
+.item-head{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:2px}
+
+/* ---------- buttons ---------- */
+.actions{display:flex; gap:11px; flex-wrap:wrap; margin-top:2px}
+.btn{
+  display:inline-block; padding:11px 20px; border-radius:7px; text-decoration:none;
+  font-size:15.5px; border:1px solid var(--accent); color:var(--accent);
+  transition:background .15s, color .15s;
+}
+.btn:hover{background:var(--accent); color:var(--bg)}
+.btn.solid{background:var(--accent); color:var(--bg)}
+.btn.solid:hover{opacity:.87}
+
+/* ---------- note ---------- */
+.disclosure{border-left:3px solid var(--accent); background:var(--surface);
+  padding:16px 19px; border-radius:0 8px 8px 0; margin:0; max-width:64ch}
+.disclosure b{display:block; font-size:14px; color:var(--accent); margin-bottom:6px}
+.disclosure p{font-size:14.5px; color:var(--muted); margin:0 0 9px; line-height:1.55}
+.disclosure p:last-child{margin-bottom:0}
+
+.howto{color:var(--muted); font-size:15.5px; max-width:62ch; margin:0 0 30px}
+.howto b{color:var(--ink); font-weight:600}
+
+footer{padding:38px 0 58px; font-size:14.5px; color:var(--muted)}
+footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+footer a{color:var(--muted)}
+
+@media (max-width:620px){
+  .hero{padding:50px 0 42px}
+  section{padding:44px 0}
+  .item{padding:22px; gap:16px}
+  .item .icon{width:52px; height:52px; border-radius:12px}
+  .brand img{width:160px}
+  nav{width:100%; margin-left:0; gap:16px}
+  .btn{padding:12px 18px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/logo.jpg" alt="Brewster Wickersham Publications" width="512" height="279">
+    </a>
+    <nav>
+      <a href="/#books">Books</a>
+      <a href="/#apps">Apps</a>
+      <a href="/#authors">Authors</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Would you leave a review?</h1>
+    <p class="lede">If the book, the workbook, or one of the apps has been useful
+      to you, a sentence or two is what helps the next person with chronic pain
+      find it.</p>
+    <p class="lede">Honest is far more useful than glowing. If something did not
+      work for you, that is worth writing too.</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     BOOKS — Amazon review links open the write-a-review form
+     directly (US store; see the note in the script block).
+     ============================================================ -->
+<section id="books">
+  <div class="wrap">
+    <p class="eyebrow">Amazon</p>
+    <h2>The books</h2>
+    <p class="howto">Amazon will ask you to sign in, then show a star rating and a
+      box for your review. <b>You do not have to have bought it from Amazon</b> to
+      rate it, though verified purchases carry more weight.</p>
+
+    <article class="item">
+      <div class="body">
+        <div class="item-head">
+          <h3>The Resilient Path</h3>
+          <span class="badge">Book</span>
+        </div>
+        <p class="sub">Managing Life with Chronic Pain</p>
+        <div class="actions">
+          <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0HHLCHTRC" target="_blank" rel="noopener">Write a review</a>
+          <a class="btn" href="https://www.amazon.com/dp/B0HHLCHTRC" target="_blank" rel="noopener">See the listing</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="body">
+        <div class="item-head">
+          <h3>The Resilient Path Workbook</h3>
+          <span class="badge">Workbook</span>
+        </div>
+        <p class="sub">Your personal workbook</p>
+        <div class="actions">
+          <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0HHLCSVBJ" target="_blank" rel="noopener">Write a review</a>
+          <a class="btn" href="https://www.amazon.com/dp/B0HHLCSVBJ" target="_blank" rel="noopener">See the listing</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     APPS — Apple's ?action=write-review opens the review sheet.
+     Google Play has no equivalent direct-review URL, so those
+     buttons open the listing, where the rating stars sit near
+     the top of the page.
+     ============================================================ -->
+<section id="apps">
+  <div class="wrap">
+    <p class="eyebrow">App Store &amp; Google Play</p>
+    <h2>The apps</h2>
+    <p class="howto">Tap the store you downloaded from. On iPhone the review sheet
+      opens straight away; on Android, scroll to <b>Rate this app</b> on the listing.</p>
+
+    <article class="item">
+      <img class="icon" src="/review/icon-resilient-path.png" alt="" width="64" height="64">
+      <div class="body">
+        <div class="item-head">
+          <h3>Resilient Path</h3>
+        </div>
+        <p class="sub">The book&rsquo;s companion app</p>
+        <div class="actions">
+          <a class="btn solid" href="https://apps.apple.com/app/id6762085688?action=write-review" target="_blank" rel="noopener">App&nbsp;Store</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=resilient.path.app" target="_blank" rel="noopener">Google&nbsp;Play</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="icon" src="/review/icon-rheumcompanion.png" alt="" width="64" height="64">
+      <div class="body">
+        <div class="item-head">
+          <h3>RheumCompanion</h3>
+        </div>
+        <p class="sub">Guides, medications, and flare tracking</p>
+        <div class="actions">
+          <a class="btn solid" href="https://apps.apple.com/app/id6784212388?action=write-review" target="_blank" rel="noopener">App&nbsp;Store</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.rheumcompanion.app" target="_blank" rel="noopener">Google&nbsp;Play</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="icon" src="/review/icon-soothequest.png" alt="" width="64" height="64">
+      <div class="body">
+        <div class="item-head">
+          <h3>SootheQuest</h3>
+        </div>
+        <p class="sub">The gentle match-3 game</p>
+        <div class="actions">
+          <a class="btn solid" href="https://apps.apple.com/app/id6791187064?action=write-review" target="_blank" rel="noopener">App&nbsp;Store</a>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest" target="_blank" rel="noopener">Google&nbsp;Play</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     DISCLOSURE — matches the language used elsewhere on the site.
+     ============================================================ -->
+<section id="note">
+  <div class="wrap">
+    <p class="eyebrow">Before you do</p>
+    <h2>A few honest words</h2>
+    <div class="disclosure">
+      <b>Reviews are optional and never rewarded</b>
+      <p>Nothing is offered in exchange for a review &mdash; no discount, no free
+        copy, no consideration of any kind. Amazon and both app stores prohibit
+        incentivized reviews, and a review bought that way is worthless to the
+        person reading it.</p>
+      <p>If you are a patient of Dr. Wickersham: these books and apps are not part
+        of your treatment plan, and whether you review them, ignore them, or
+        criticize them will never affect your care in any way.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; <span id="year">2026</span> Brewster Wickersham Publications</div>
+    <div><a href="/">brewsterwickershampublications.com</a></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
