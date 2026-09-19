@@ -24,7 +24,11 @@ need attention:
 1. **Amazon links** (2×) — the book and workbook. Replace `href="#"`, remove
    `class="disabled"`, change the label to "Buy on Amazon".
 
-That is the only placeholder left. All three apps are live and linked.
+That is the only placeholder left. Resilient Path, RheumCompanion, and
+SootheQuest are live and linked. **Lumina: The Cloud Garden** is listed as
+"Coming soon" with an email-us link; when it launches, change its badge to
+`<span class="badge">Available now</span>`, add pricing, and add store buttons
+like the other app cards.
 
 Colors are the CSS variables at the top of the `<style>` block, drawn from the
 logo: navy `#1a2b4a`, gold `#8a6a2b`, cream `#f8f4ea`. Changing those re-skins
@@ -32,8 +36,9 @@ the whole site, light and dark modes together.
 
 ### Still to confirm
 
-- **Module counts.** The workbook has 25 modules; the Resilient Path app's
-  store listing says 24. These may genuinely differ — worth a look.
+- **Module counts.** The app has 25 modules (confirmed in the app source,
+  Module 1 through Module 25), and this site now says 25. If the App Store or
+  Google Play listing still says 24, update the listing.
 - **Book subtitle.** This site and theresilientpathbook.com use *Managing Life
   with Chronic Pain*. The SootheQuest App Store listing calls it *Modern
   Strategies for Living with Chronic Pain*. One of them is stale.
