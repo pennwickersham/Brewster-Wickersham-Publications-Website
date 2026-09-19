@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Brewster Wickersham Publications</title>
+<title>Brewster Wickersham Publications — Books &amp; Apps for Living with Chronic Pain</title>
 <meta name="description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
 <link rel="canonical" href="https://brewsterwickershampublications.com/">
 <meta property="og:type" content="website">
@@ -12,7 +12,107 @@
 <meta property="og:description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
 <meta property="og:image" content="https://brewsterwickershampublications.com/logo.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Structured data: identifies the press, its site, and its books for search engines.
+     The @id values match the ones on theresilientpathbook.com so the two sites describe
+     the same entities. Keep ISBNs and Amazon URLs in step with the listings. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://brewsterwickershampublications.com/#organization",
+      "name": "Brewster Wickersham Publications",
+      "url": "https://brewsterwickershampublications.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://brewsterwickershampublications.com/logo.jpg",
+        "width": 512,
+        "height": 279
+      },
+      "description": "An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.",
+      "email": "info@brewsterwickershampublications.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://brewsterwickershampublications.com/#website",
+      "url": "https://brewsterwickershampublications.com/",
+      "name": "Brewster Wickersham Publications",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://theresilientpathbook.com/#pendleton-wickersham",
+      "name": "Pendleton B. Wickersham",
+      "honorificSuffix": "MD, FACP, FACR",
+      "jobTitle": "Board-certified rheumatologist",
+      "url": "https://theresilientpathbook.com/#authors",
+      "sameAs": [
+        "https://www.amazon.com/Pendleton-Wickersham/e/B004TYIEZQ",
+        "https://www.doximity.com/pub/pendleton-wickersham-md"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://theresilientpathbook.com/#louise-locker",
+      "name": "Louise Locker",
+      "honorificSuffix": "LCSW",
+      "jobTitle": "Licensed clinical social worker",
+      "url": "https://theresilientpathbook.com/#authors"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://theresilientpathbook.com/#book",
+      "name": "Managing Life with Chronic Pain: The Resilient Path",
+      "alternateName": "The Resilient Path",
+      "url": "https://theresilientpathbook.com/",
+      "image": "https://theresilientpathbook.com/images/book-cover.jpg",
+      "author": { "@id": "https://theresilientpathbook.com/#pendleton-wickersham" },
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" },
+      "inLanguage": "en",
+      "workExample": [
+        {
+          "@type": "Book",
+          "@id": "https://theresilientpathbook.com/#book-paperback",
+          "bookFormat": "https://schema.org/Paperback",
+          "isbn": "9798171016081",
+          "url": "https://www.amazon.com/dp/B0HHLCHTRC"
+        },
+        {
+          "@type": "Book",
+          "@id": "https://theresilientpathbook.com/#book-kindle",
+          "bookFormat": "https://schema.org/EBook",
+          "url": "https://www.amazon.com/dp/B0HHKKSR3D"
+        }
+      ]
+    },
+    {
+      "@type": "Book",
+      "@id": "https://theresilientpathbook.com/#workbook",
+      "name": "The Resilient Path: Your Personal Workbook",
+      "url": "https://theresilientpathbook.com/#workbook",
+      "image": "https://theresilientpathbook.com/images/workbook-cover.jpg",
+      "author": [
+        { "@id": "https://theresilientpathbook.com/#pendleton-wickersham" },
+        { "@id": "https://theresilientpathbook.com/#louise-locker" }
+      ],
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" },
+      "inLanguage": "en",
+      "workExample": {
+        "@type": "Book",
+        "@id": "https://theresilientpathbook.com/#workbook-paperback",
+        "bookFormat": "https://schema.org/Paperback",
+        "isbn": "9798171021085",
+        "url": "https://www.amazon.com/dp/B0HHLCSVBJ"
+      }
+    }
+  ]
+}
+</script>
 <style>
 /* ============================================================
    COLORS — drawn from the logo: navy, gold, cream.
@@ -222,8 +322,8 @@ footer a{color:var(--muted)}
         to finish, but a way of living well with pain, one step at a time.</p>
       <p class="price">Available in <strong>paperback</strong> and for <strong>Kindle</strong></p>
       <div class="actions">
-        <a class="btn solid js-amazon" data-book="book" href="#">Paperback on Amazon</a>
-        <a class="btn js-amazon" data-book="kindle" href="#">Kindle edition</a>
+        <a class="btn solid js-amazon" data-book="book" href="https://www.amazon.com/dp/B0HHLCHTRC" target="_blank" rel="noopener">Paperback on Amazon</a>
+        <a class="btn js-amazon" data-book="kindle" href="https://www.amazon.com/dp/B0HHKKSR3D" target="_blank" rel="noopener">Kindle edition</a>
       </div>
     </article>
 
@@ -251,7 +351,7 @@ footer a{color:var(--muted)}
       <p>The pages are yours to write on. There are no right answers and nothing
         to score.</p>
       <div class="actions">
-        <a class="btn solid js-amazon" data-book="workbook" href="#">Paperback on Amazon</a>
+        <a class="btn solid js-amazon" data-book="workbook" href="https://www.amazon.com/dp/B0HHLCSVBJ" target="_blank" rel="noopener">Paperback on Amazon</a>
       </div>
     </article>
   </div>
@@ -480,7 +580,7 @@ footer a{color:var(--muted)}
 <footer>
   <div class="wrap">
     <div>&copy; <span id="year">2026</span> Brewster Wickersham Publications</div>
-    <div><a href="https://www.theresilientpathbook.com">theresilientpathbook.com</a></div>
+    <div><a href="https://theresilientpathbook.com/">theresilientpathbook.com</a></div>
   </div>
 </footer>
 
@@ -492,6 +592,10 @@ footer a{color:var(--muted)}
    (strip everything after the ASIN — no /ref=, no ?tag=, no
    search-session parameters). Any entry left empty renders as a
    non-clickable "coming soon" button rather than a dead link.
+
+   The same URLs are also written into each button's href (and the
+   structured data in <head>) so search engines see them without
+   running this script. If a link changes, change it there too.
    ============================================================ */
 const AMAZON = {
   book:     "https://www.amazon.com/dp/B0HHLCHTRC",   // The Resilient Path — paperback
