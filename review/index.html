@@ -114,6 +114,25 @@ section > .wrap > h2{font-size:clamp(25px,3.4vw,32px); margin:0 0 14px}
 .btn:hover{background:var(--accent); color:var(--bg)}
 .btn.solid{background:var(--accent); color:var(--bg)}
 .btn.solid:hover{opacity:.87}
+button.btn{background:none; font-family:inherit; cursor:pointer}
+.btn.small{padding:8px 15px; font-size:14px}
+
+/* ---------- desktop notice (shown by the script off phones) ---------- */
+.notice{
+  border:1px solid var(--line); background:var(--raised); border-radius:10px;
+  padding:17px 20px; margin:0 0 26px; max-width:64ch;
+}
+.notice b{display:block; font-size:14px; color:var(--accent); margin-bottom:6px}
+.notice p{font-size:14.5px; color:var(--muted); margin:0; line-height:1.55}
+.notice .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:13px}
+.notice .addr{
+  font:14px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--ink);
+  background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:8px 10px;
+}
+.steps{color:var(--muted); font-size:15.5px; max-width:62ch; margin:0 0 30px; padding-left:20px}
+.steps li{margin-bottom:6px}
+.steps li:last-child{margin-bottom:0}
+.steps b{color:var(--ink); font-weight:600}
 
 /* ---------- note ---------- */
 .disclosure{border-left:3px solid var(--accent); background:var(--surface);
@@ -213,17 +232,44 @@ footer a{color:var(--muted)}
 </section>
 
 <!-- ============================================================
-     APPS — Apple's ?action=write-review opens the review sheet.
-     Google Play has no equivalent direct-review URL, so those
-     buttons open the listing, where the rating stars sit near
-     the top of the page.
+     APPS — neither store lets anyone write a review on the web.
+     Apple's ?action=write-review opens the review sheet, but only
+     once the link is handled by the App Store app; Google Play has
+     no write-review URL at all. So: the buttons carry the plain
+     https listing as a safe default, the script at the foot of the
+     page swaps in itms-apps:// and market:// on the devices where
+     those open the store app, and everyone on a computer is told
+     plainly to finish this on their phone.
      ============================================================ -->
 <section id="apps">
   <div class="wrap">
     <p class="eyebrow">App Store &amp; Google Play</p>
     <h2>The apps</h2>
-    <p class="howto">Tap the store you downloaded from. On iPhone the review sheet
-      opens straight away; on Android, scroll to <b>Rate this app</b> on the listing.</p>
+    <p class="howto">Both stores only accept reviews from inside their own app, on
+      a phone or tablet signed in to the account that installed it. <b>There is no
+      review box on either store&rsquo;s website</b> &mdash; so if a button below
+      lands you on a plain product page, you are on a computer, not doing anything
+      wrong.</p>
+
+    <div class="notice" id="desktop-note" hidden>
+      <b>You are reading this on a computer</b>
+      <p>Neither store will let you write a review here. Open this page on the
+        phone or tablet the app is installed on, and the buttons below will take
+        you straight into the store app.</p>
+      <div class="row">
+        <span class="addr">brewsterwickershampublications.com/review</span>
+        <button type="button" class="btn small" id="copy-link">Copy link</button>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li><b>iPhone or iPad:</b> the App&nbsp;Store button opens the app straight
+        on the review sheet &mdash; pick your stars, write a line, tap
+        <b>Send</b>.</li>
+      <li><b>Android:</b> the Google&nbsp;Play button opens the listing in the Play
+        Store app. Scroll past the screenshots to <b>Ratings and reviews</b>, tap
+        the stars under <b>Rate this app</b>, then <b>Write a review</b>.</li>
+    </ol>
 
     <article class="item">
       <img class="icon" src="/review/icon-resilient-path.png" alt="" width="64" height="64">
@@ -233,8 +279,12 @@ footer a{color:var(--muted)}
         </div>
         <p class="sub">The book&rsquo;s companion app</p>
         <div class="actions">
-          <a class="btn solid" href="https://apps.apple.com/app/id6762085688?action=write-review" target="_blank" rel="noopener">App&nbsp;Store</a>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=resilient.path.app" target="_blank" rel="noopener">Google&nbsp;Play</a>
+          <a class="btn solid" data-app-store="6762085688"
+             href="https://apps.apple.com/us/app/resilient-path/id6762085688?action=write-review"
+             target="_blank" rel="noopener">App&nbsp;Store</a>
+          <a class="btn" data-play-store="resilient.path.app"
+             href="https://play.google.com/store/apps/details?id=resilient.path.app"
+             target="_blank" rel="noopener">Google&nbsp;Play</a>
         </div>
       </div>
     </article>
@@ -247,8 +297,12 @@ footer a{color:var(--muted)}
         </div>
         <p class="sub">Guides, medications, and flare tracking</p>
         <div class="actions">
-          <a class="btn solid" href="https://apps.apple.com/app/id6784212388?action=write-review" target="_blank" rel="noopener">App&nbsp;Store</a>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.rheumcompanion.app" target="_blank" rel="noopener">Google&nbsp;Play</a>
+          <a class="btn solid" data-app-store="6784212388"
+             href="https://apps.apple.com/us/app/rheumcompanion-flare-tracker/id6784212388?action=write-review"
+             target="_blank" rel="noopener">App&nbsp;Store</a>
+          <a class="btn" data-play-store="com.rheumcompanion.app"
+             href="https://play.google.com/store/apps/details?id=com.rheumcompanion.app"
+             target="_blank" rel="noopener">Google&nbsp;Play</a>
         </div>
       </div>
     </article>
@@ -261,8 +315,12 @@ footer a{color:var(--muted)}
         </div>
         <p class="sub">The gentle match-3 game</p>
         <div class="actions">
-          <a class="btn solid" href="https://apps.apple.com/app/id6791187064?action=write-review" target="_blank" rel="noopener">App&nbsp;Store</a>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest" target="_blank" rel="noopener">Google&nbsp;Play</a>
+          <a class="btn solid" data-app-store="6791187064"
+             href="https://apps.apple.com/us/app/soothequest/id6791187064?action=write-review"
+             target="_blank" rel="noopener">App&nbsp;Store</a>
+          <a class="btn" data-play-store="com.brewsterwickershampublications.soothequest"
+             href="https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest"
+             target="_blank" rel="noopener">Google&nbsp;Play</a>
         </div>
       </div>
     </article>
@@ -300,6 +358,72 @@ footer a{color:var(--muted)}
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ============================================================
+   Store buttons.
+
+   A review can only be written inside the store's own app, so on
+   iOS and Android the https listing is swapped for the scheme
+   that hands the link to that app: itms-apps:// honours
+   ?action=write-review and opens the review sheet, market://
+   opens the Play listing. Macs are deliberately left on https —
+   these are iPhone apps, and the Mac App Store has nothing to
+   show for them. Everyone else gets told why the button only
+   showed them a product page.
+   ============================================================ */
+(function(){
+  var ua = navigator.userAgent || '';
+  var iPadOS = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || iPadOS;
+  var isAndroid = /Android/.test(ua);
+  var each = function(sel, fn){
+    Array.prototype.forEach.call(document.querySelectorAll(sel), fn);
+  };
+
+  if (isIOS) {
+    each('a[data-app-store]', function(a){
+      a.href = 'itms-apps://apps.apple.com/app/id' +
+               a.getAttribute('data-app-store') + '?action=write-review';
+    });
+  }
+  if (isAndroid) {
+    each('a[data-play-store]', function(a){
+      a.href = 'market://details?id=' + a.getAttribute('data-play-store');
+    });
+  }
+
+  if (isIOS || isAndroid) return;
+
+  var note = document.getElementById('desktop-note');
+  if (note) note.hidden = false;
+
+  var copy = document.getElementById('copy-link');
+  if (copy && navigator.clipboard) {
+    copy.addEventListener('click', function(){
+      navigator.clipboard.writeText('https://brewsterwickershampublications.com/review/')
+        .then(function(){
+          copy.textContent = 'Copied';
+          setTimeout(function(){ copy.textContent = 'Copy link'; }, 2200);
+        })
+        .catch(function(){ selectAddress(); copy.textContent = 'Copy it by hand'; });
+    });
+  } else if (copy) {
+    /* No clipboard API (older or non-secure context): select the address
+       instead so a plain copy keystroke works. */
+    copy.textContent = 'Select address';
+    copy.addEventListener('click', selectAddress);
+  }
+
+  function selectAddress(){
+    var addr = note && note.querySelector('.addr');
+    if (!addr || !window.getSelection) return;
+    var range = document.createRange();
+    range.selectNodeContents(addr);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+})();
 </script>
 </body>
 </html>
