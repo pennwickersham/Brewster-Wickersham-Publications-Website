@@ -11,6 +11,7 @@ dependencies — edit the HTML and push.
 | `logo.jpg` | The BWP crest. Used in the header and as the social share image. |
 | `favicon.png`, `favicon.ico`, `apple-touch-icon.png` | Browser-tab and search-result icon, cropped from the crest in `logo.jpg`. |
 | `404.html` | Shown for bad URLs. |
+| `arcane-estate/` | The Arcane Estate's home, support and privacy pages, linked from its App Store and Google Play listings. Kept in step with `docs/site` in the app's repo. |
 | `products/`, `collections/`, `pages/`, `blogs/`, `policies/` | Redirects from the old Shopify store's addresses. See below. |
 | `CNAME` | Tells GitHub Pages to serve the custom domain. **Do not delete.** |
 | `.nojekyll` | Stops GitHub from running Jekyll over the files. |
