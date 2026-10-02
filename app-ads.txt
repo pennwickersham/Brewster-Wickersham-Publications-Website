@@ -1,0 +1,6 @@
+# Authorised digital sellers for Brewster Wickersham Publications' apps.
+# https://iabtechlab.com/app-ads-txt/
+#
+# Declared in the Google Play and App Store listings as the developer website, which is what makes
+# this file authoritative for The Arcane Estate's ad inventory.
+google.com, pub-7422643597720208, DIRECT, f08c47fec0942fa0
