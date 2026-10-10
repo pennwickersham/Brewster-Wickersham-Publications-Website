@@ -29,10 +29,10 @@ need attention:
    structured data (`application/ld+json`) in `<head>`. Change all three if a
    listing URL changes.
 
-Resilient Path, RheumCompanion, and SootheQuest are live and linked. **Lumina: The Cloud Garden** is listed as
-"Coming soon" with an email-us link; when it launches, change its badge to
-`<span class="badge">Available now</span>`, add pricing, and add store buttons
-like the other app cards.
+Resilient Path, RheumCompanion, SootheQuest, Lumina: The Cloud Garden and Arcane Estate: Rune Puzzles are all
+live and linked. Lumina and Arcane Estate are on Google Play only so far, each with its own site
+(luminacloudgarden.com, arcaneestategame.com); when their App Store listings go live, add an
+`App Store` button to each card and update the card's `sub` line.
 
 Colors are the CSS variables at the top of the `<style>` block, drawn from the
 logo: navy `#1a2b4a`, gold `#8a6a2b`, cream `#f8f4ea`. Changing those re-skins
