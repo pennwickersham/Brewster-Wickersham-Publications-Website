@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get The Arcane Estate</title>
+<!-- A doorway for shared cards, not a page to rank: the Estate's own page is the one to index. -->
+<meta name="robots" content="noindex,follow">
+<link rel="stylesheet" href="../style.css">
+<style>
+.get{display:block;margin:14px 0;padding:14px 18px;border:1px solid #dcdde6;border-radius:12px;
+  background:#fff;text-decoration:none;font-weight:600}
+.get small{display:block;font-weight:400;color:#666a80}
+.soon{border-style:dashed;color:#666a80;font-weight:600}
+</style>
+<script>
+// Every card the game shares ends with this page, so its one job is to be quick and to be right:
+// send each reader to the store their device can actually install from. The links below are real
+// HTML, so this works with scripting off and leaves something for a crawler to read.
+(function () {
+  "use strict";
+
+  var PLAY = "https://play.google.com/store/apps/details?id=com.arcaneestate.game" +
+    "&referrer=utm_source%3Dshare_card%26utm_medium%3Dsocial";
+
+  // Set this the day the App Store listing goes live and iPhone readers start being forwarded.
+  // The numeric id is in App Store Connect, not the bundle id:
+  //   https://apps.apple.com/app/id<APP_ID>?ct=share_card
+  // Until then iOS readers get the page below, which tells them the truth rather than dead-ending
+  // them on a store page that does not exist. Cards already shared pick this up with no app update.
+  var APP_STORE = null;
+
+  // ?stay lets us open the page itself without being forwarded off it.
+  if (location.search.indexOf("stay") !== -1) return;
+
+  var ua = navigator.userAgent || "";
+  var isAndroid = /Android/i.test(ua);
+  // iPadOS reports itself as a Mac, so a touch-capable "Mac" is an iPad.
+  var isIos = /iPhone|iPad|iPod/i.test(ua) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+  if (isAndroid) location.replace(PLAY);
+  else if (isIos && APP_STORE) location.replace(APP_STORE);
+})();
+</script>
+</head>
+<body>
+<nav><a href="../">The Arcane Estate</a><a href="../support.html">Support</a><a href="../privacy.html">Privacy</a></nav>
+<h1>Get The Arcane Estate</h1>
+<div class="sub">A daily logic puzzle · Brewster Wickersham Publications</div>
+
+<p>One puzzle a day, the same one for every player, and a ruined estate that rises as you solve it.</p>
+
+<a class="get" href="https://play.google.com/store/apps/details?id=com.arcaneestate.game&amp;referrer=utm_source%3Dshare_card%26utm_medium%3Dsocial">
+  Android — get it on Google Play
+  <small>Phones and tablets</small>
+</a>
+
+<div class="get soon">
+  iPhone and iPad — coming soon
+  <small>The Estate is on its way to the App Store.</small>
+</div>
+
+<p><a href="../">More about the Estate</a></p>
+
+<footer>© 2026 Brewster Wickersham Publications</footer>
+</body>
+</html>
