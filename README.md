@@ -30,9 +30,9 @@ need attention:
    listing URL changes.
 
 Resilient Path, RheumCompanion, SootheQuest, Lumina: The Cloud Garden and Arcane Estate: Rune Puzzles are all
-live and linked. Lumina and Arcane Estate are on Google Play only so far, each with its own site
-(luminacloudgarden.com, arcaneestategame.com); when their App Store listings go live, add an
-`App Store` button to each card and update the card's `sub` line.
+live and linked. Arcane Estate is on both stores (App Store `id6817651417`) and has its own site,
+arcaneestategame.com. Lumina is on Google Play only so far (site: luminacloudgarden.com); when its
+App Store listing goes live, add an `App Store` button to its card and update the card's `sub` line.
 
 Colors are the CSS variables at the top of the `<style>` block, drawn from the
 logo: navy `#1a2b4a`, gold `#8a6a2b`, cream `#f8f4ea`. Changing those re-skins

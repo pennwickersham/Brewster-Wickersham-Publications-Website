@@ -23,12 +23,9 @@
   var PLAY = "https://play.google.com/store/apps/details?id=com.arcaneestate.game" +
     "&referrer=utm_source%3Dshare_card%26utm_medium%3Dsocial";
 
-  // Set this the day the App Store listing goes live and iPhone readers start being forwarded.
-  // The numeric id is in App Store Connect, not the bundle id:
-  //   https://apps.apple.com/app/id<APP_ID>?ct=share_card
-  // Until then iOS readers get the page below, which tells them the truth rather than dead-ending
-  // them on a store page that does not exist. Cards already shared pick this up with no app update.
-  var APP_STORE = null;
+  // App Store listing (live October 2026). No country in the path, so each reader lands on their
+  // own storefront; ct tags the visit as coming from a share card in App Store Connect.
+  var APP_STORE = "https://apps.apple.com/app/id6817651417?ct=share_card";
 
   // ?stay lets us open the page itself without being forwarded off it.
   if (location.search.indexOf("stay") !== -1) return;
@@ -56,10 +53,10 @@
   <small>Phones and tablets</small>
 </a>
 
-<div class="get soon">
-  iPhone and iPad — coming soon
-  <small>The Estate is on its way to the App Store.</small>
-</div>
+<a class="get" href="https://apps.apple.com/app/id6817651417?ct=share_card">
+  iPhone and iPad — download on the App Store
+  <small>Phones and tablets</small>
+</a>
 
 <p><a href="../">More about the Estate</a></p>
 
