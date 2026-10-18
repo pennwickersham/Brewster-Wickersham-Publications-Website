@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Indexable pages only, at their canonical URLs. The old Shopify redirect stubs, the
+     /book.html and /reviews/ short links, /arcane-estate/get/ and 404.html are left out on
+     purpose. Set lastmod to the date a page's content last changed. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://brewsterwickershampublications.com/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://brewsterwickershampublications.com/review/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://brewsterwickershampublications.com/arcane-estate/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://brewsterwickershampublications.com/arcane-estate/support.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://brewsterwickershampublications.com/arcane-estate/privacy.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
