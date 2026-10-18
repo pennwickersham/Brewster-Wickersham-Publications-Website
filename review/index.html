@@ -3,15 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Leave a review &mdash; Brewster Wickersham Publications</title>
-<meta name="description" content="Rate or review The Resilient Path, the workbook, and the Resilient Path, RheumCompanion, and SootheQuest apps.">
+<title>Review The Resilient Path Book, Workbook &amp; Companion Apps</title>
+<meta name="description" content="Leave an honest review of The Resilient Path book and workbook on Amazon, or rate the Resilient Path, RheumCompanion and SootheQuest apps from your phone.">
 <link rel="canonical" href="https://brewsterwickershampublications.com/review/">
+<meta name="theme-color" content="#f8f4ea">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Brewster Wickersham Publications">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://brewsterwickershampublications.com/review/">
-<meta property="og:title" content="Leave a review — Brewster Wickersham Publications">
-<meta property="og:description" content="Rate or review The Resilient Path, the workbook, and the Resilient Path, RheumCompanion, and SootheQuest apps.">
-<meta property="og:image" content="https://brewsterwickershampublications.com/logo.jpg">
+<meta property="og:title" content="Review The Resilient Path Book, Workbook &amp; Companion Apps">
+<meta property="og:description" content="Leave an honest review of The Resilient Path book and workbook on Amazon, or rate the Resilient Path, RheumCompanion and SootheQuest apps from your phone.">
+<meta property="og:image" content="https://brewsterwickershampublications.com/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Brewster Wickersham Publications crest: an open book and quill above the press's name">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Review The Resilient Path Book, Workbook &amp; Companion Apps">
+<meta name="twitter:description" content="Leave an honest review of The Resilient Path book and workbook on Amazon, or rate the Resilient Path, RheumCompanion and SootheQuest apps from your phone.">
+<meta name="twitter:image" content="https://brewsterwickershampublications.com/og-image.jpg">
+<meta name="twitter:image:alt" content="The Brewster Wickersham Publications crest: an open book and quill above the press's name">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
@@ -148,6 +160,16 @@ footer{padding:38px 0 58px; font-size:14.5px; color:var(--muted)}
 footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
 footer a{color:var(--muted)}
 
+/* ---- Network: the same list of our sites and Amazon listings on every site ---- */
+.network{display:block; width:100%; margin:0 0 10px; padding-bottom:28px; border-bottom:1px solid var(--line); font-size:inherit}
+.network h2{font-size:19.5px; color:var(--ink); margin:0 0 18px}
+.network-cols{display:grid; gap:10px 36px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.network h3{font:600 12.5px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            text-transform:uppercase; letter-spacing:.16em; color:var(--muted); margin:0 0 10px}
+.network ul{list-style:none; margin:0; padding:0}
+.network li{margin:0 0 8px; line-height:1.5}
+.network a{color:var(--accent); text-decoration:underline}
+
 @media (max-width:620px){
   .hero{padding:50px 0 42px}
   section{padding:44px 0}
@@ -165,13 +187,14 @@ footer a{color:var(--muted)}
 <header>
   <div class="wrap">
     <a class="brand" href="/">
-      <img src="/logo.jpg" alt="Brewster Wickersham Publications" width="512" height="279">
+      <img src="/logo.jpg" alt="Brewster Wickersham Publications" width="512" height="279" fetchpriority="high">
     </a>
     <nav>
       <a href="/#books">Books</a>
       <a href="/#apps">Apps</a>
       <a href="/#authors">Authors</a>
       <a href="/#contact">Contact</a>
+      <a href="#network">Our sites</a>
     </nav>
   </div>
 </header>
@@ -272,7 +295,7 @@ footer a{color:var(--muted)}
     </ol>
 
     <article class="item">
-      <img class="icon" src="/review/icon-resilient-path.png" alt="" width="64" height="64">
+      <img class="icon" src="/review/icon-resilient-path.png" alt="" width="64" height="64" loading="lazy" decoding="async">
       <div class="body">
         <div class="item-head">
           <h3>Resilient Path</h3>
@@ -290,7 +313,7 @@ footer a{color:var(--muted)}
     </article>
 
     <article class="item">
-      <img class="icon" src="/review/icon-rheumcompanion.png" alt="" width="64" height="64">
+      <img class="icon" src="/review/icon-rheumcompanion.png" alt="" width="64" height="64" loading="lazy" decoding="async">
       <div class="body">
         <div class="item-head">
           <h3>RheumCompanion</h3>
@@ -308,7 +331,7 @@ footer a{color:var(--muted)}
     </article>
 
     <article class="item">
-      <img class="icon" src="/review/icon-soothequest.png" alt="" width="64" height="64">
+      <img class="icon" src="/review/icon-soothequest.png" alt="" width="64" height="64" loading="lazy" decoding="async">
       <div class="body">
         <div class="item-head">
           <h3>SootheQuest</h3>
@@ -351,6 +374,32 @@ footer a{color:var(--muted)}
 
 <footer>
   <div class="wrap">
+    <!-- NETWORK — the same list of our sites and Amazon listings appears on every
+         Brewster Wickersham Publications site. Keep the wording and links in step. -->
+    <nav class="network" id="network" aria-labelledby="network-title">
+      <h2 id="network-title">From Brewster Wickersham Publications</h2>
+      <div class="network-cols">
+        <div>
+          <h3>Our websites</h3>
+          <ul>
+            <li><a href="https://brewsterwickershampublications.com/">Brewster Wickersham Publications</a> &mdash; the publisher</li>
+            <li><a href="https://theresilientpathbook.com/" target="_blank" rel="noopener">The Resilient Path</a> &mdash; chronic pain book, workbook and app</li>
+            <li><a href="https://www.arcaneestategame.com/" target="_blank" rel="noopener">Arcane Estate: Rune Puzzles</a> &mdash; a daily logic puzzle game</li>
+            <li><a href="https://www.luminacloudgarden.com/" target="_blank" rel="noopener">Lumina: The Cloud Garden</a> &mdash; a gentle sky-garden game</li>
+            <li><a href="https://www.soothequest.com/" target="_blank" rel="noopener">SootheQuest</a> &mdash; a relaxing match-3 puzzle app</li>
+          </ul>
+        </div>
+        <div>
+          <h3>On Amazon</h3>
+          <ul>
+            <li><a href="https://www.amazon.com/stores/author/B004TYIEZQ" target="_blank" rel="noopener">Pendleton Wickersham&rsquo;s Amazon author store</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HJ1NMXLL" target="_blank" rel="noopener">The Resilient Path paperback</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HHKKSR3D" target="_blank" rel="noopener">The Resilient Path Kindle edition</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HHLCSVBJ" target="_blank" rel="noopener">The Resilient Path Workbook paperback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div>&copy; <span id="year">2026</span> Brewster Wickersham Publications</div>
     <div><a href="/">brewsterwickershampublications.com</a></div>
   </div>

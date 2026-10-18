@@ -3,21 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Brewster Wickersham Publications — Books &amp; Apps for Living with Chronic Pain</title>
-<meta name="description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
+<title>Brewster Wickersham Publications: Chronic Pain Books &amp; Apps</title>
+<meta name="description" content="Independent press behind The Resilient Path, a chronic pain book and workbook by a rheumatologist, plus the SootheQuest, Lumina and Arcane Estate apps.">
 <link rel="canonical" href="https://brewsterwickershampublications.com/">
+<meta name="theme-color" content="#f8f4ea">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Brewster Wickersham Publications">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://brewsterwickershampublications.com/">
-<meta property="og:title" content="Brewster Wickersham Publications">
-<meta property="og:description" content="An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.">
-<meta property="og:image" content="https://brewsterwickershampublications.com/logo.jpg">
+<meta property="og:title" content="Brewster Wickersham Publications: Chronic Pain Books &amp; Apps">
+<meta property="og:description" content="Independent press behind The Resilient Path, a chronic pain book and workbook by a rheumatologist, plus the SootheQuest, Lumina and Arcane Estate apps.">
+<meta property="og:image" content="https://brewsterwickershampublications.com/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Brewster Wickersham Publications crest: an open book and quill above the press's name">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brewster Wickersham Publications: Chronic Pain Books &amp; Apps">
+<meta name="twitter:description" content="Independent press behind The Resilient Path, a chronic pain book and workbook by a rheumatologist, plus the SootheQuest, Lumina and Arcane Estate apps.">
+<meta name="twitter:image" content="https://brewsterwickershampublications.com/og-image.jpg">
+<meta name="twitter:image:alt" content="The Brewster Wickersham Publications crest: an open book and quill above the press's name">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-<!-- Structured data: identifies the press, its site, and its books for search engines.
-     The @id values match the ones on theresilientpathbook.com so the two sites describe
-     the same entities. Keep ISBNs and Amazon URLs in step with the listings. -->
+<!-- Structured data: identifies the press, its site, its books and its apps for search engines.
+     The @id values for the people, books and Resilient Path app match the ones on
+     theresilientpathbook.com so the two sites describe the same entities. The other apps use
+     "<their site>/#app". Keep ISBNs, ASINs and store URLs in step with the listings, and
+     never add ratings, reviews or prices that are not on the page. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,6 +47,7 @@
         "width": 512,
         "height": 279
       },
+      "image": "https://brewsterwickershampublications.com/og-image.jpg",
       "description": "An independent press publishing books, workbooks, and apps for people living with chronic pain and rheumatic disease.",
       "email": "info@brewsterwickershampublications.com"
     },
@@ -53,6 +68,7 @@
       "email": "pendleton@brewsterwickershampublications.com",
       "url": "https://theresilientpathbook.com/#authors",
       "sameAs": [
+        "https://www.amazon.com/stores/author/B004TYIEZQ",
         "https://www.amazon.com/Pendleton-Wickersham/e/B004TYIEZQ",
         "https://www.doximity.com/pub/pendleton-wickersham-md"
       ]
@@ -70,6 +86,7 @@
       "@id": "https://theresilientpathbook.com/#book",
       "name": "Managing Life with Chronic Pain: The Resilient Path",
       "alternateName": "The Resilient Path",
+      "description": "A practical guide to living with chronic pain, grounded in the biopsychosocial model, for people with rheumatoid arthritis, lupus, fibromyalgia, osteoarthritis, and other autoimmune and chronic pain conditions.",
       "url": "https://theresilientpathbook.com/",
       "image": "https://theresilientpathbook.com/images/book-cover.jpg",
       "author": { "@id": "https://theresilientpathbook.com/#pendleton-wickersham" },
@@ -81,12 +98,14 @@
           "@id": "https://theresilientpathbook.com/#book-paperback",
           "bookFormat": "https://schema.org/Paperback",
           "isbn": "9798172274268",
+          "identifier": { "@type": "PropertyValue", "propertyID": "ASIN", "value": "B0HJ1NMXLL" },
           "url": "https://www.amazon.com/dp/B0HJ1NMXLL"
         },
         {
           "@type": "Book",
           "@id": "https://theresilientpathbook.com/#book-kindle",
           "bookFormat": "https://schema.org/EBook",
+          "identifier": { "@type": "PropertyValue", "propertyID": "ASIN", "value": "B0HHKKSR3D" },
           "url": "https://www.amazon.com/dp/B0HHKKSR3D"
         }
       ]
@@ -95,6 +114,7 @@
       "@type": "Book",
       "@id": "https://theresilientpathbook.com/#workbook",
       "name": "The Resilient Path: Your Personal Workbook",
+      "description": "The companion workbook to The Resilient Path, matched chapter by chapter to the book, with guided reflections, trackers, pacing plans, and flare planning.",
       "url": "https://theresilientpathbook.com/#workbook",
       "image": "https://theresilientpathbook.com/images/workbook-cover.jpg",
       "author": [
@@ -108,8 +128,106 @@
         "@id": "https://theresilientpathbook.com/#workbook-paperback",
         "bookFormat": "https://schema.org/Paperback",
         "isbn": "9798171021085",
+        "identifier": { "@type": "PropertyValue", "propertyID": "ASIN", "value": "B0HHLCSVBJ" },
         "url": "https://www.amazon.com/dp/B0HHLCSVBJ"
       }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://theresilientpathbook.com/#app",
+      "name": "Resilient Path",
+      "description": "The companion app to The Resilient Path: 25 interactive modules, a personal flare-up plan, health tracking, and a program guide grounded in the book and workbook.",
+      "url": "https://theresilientpathbook.com/",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "HealthApplication",
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" },
+      "installUrl": [
+        "https://apps.apple.com/us/app/resilient-path/id6762085688",
+        "https://play.google.com/store/apps/details?id=resilient.path.app"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/us/app/resilient-path/id6762085688",
+        "https://play.google.com/store/apps/details?id=resilient.path.app"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://www.rheumcompanion.com/#app",
+      "name": "RheumCompanion",
+      "description": "A flare tracker for rheumatic disease, with daily symptoms, medications and infusion dates, lab history, and a 30-day appointment summary.",
+      "url": "https://www.rheumcompanion.com/",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "HealthApplication",
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" },
+      "installUrl": [
+        "https://apps.apple.com/us/app/rheumcompanion-flare-tracker/id6784212388",
+        "https://play.google.com/store/apps/details?id=com.rheumcompanion.app"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/us/app/rheumcompanion-flare-tracker/id6784212388",
+        "https://play.google.com/store/apps/details?id=com.rheumcompanion.app"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": ["VideoGame", "MobileApplication"],
+      "@id": "https://www.soothequest.com/#app",
+      "name": "SootheQuest",
+      "description": "A match-3 puzzle game built for people living with chronic illness and chronic pain, with every pressure mechanic removed and all 72 levels free to play.",
+      "url": "https://www.soothequest.com/",
+      "genre": "Puzzle",
+      "gamePlatform": ["iOS", "Android"],
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "GameApplication",
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" },
+      "installUrl": [
+        "https://apps.apple.com/us/app/soothequest/id6791187064",
+        "https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/us/app/soothequest/id6791187064",
+        "https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": ["VideoGame", "MobileApplication"],
+      "@id": "https://www.luminacloudgarden.com/#app",
+      "name": "Lumina: The Cloud Garden",
+      "description": "A quiet sky-garden game that adapts to how you feel each day, with unhurried puzzles, comfort settings, and no ads, streaks or timers.",
+      "url": "https://www.luminacloudgarden.com/",
+      "genre": "Puzzle",
+      "gamePlatform": "Android",
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" },
+      "installUrl": "https://play.google.com/store/apps/details?id=com.wickersham.lumina",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.wickersham.lumina"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": ["VideoGame", "MobileApplication"],
+      "@id": "https://www.arcaneestategame.com/#app",
+      "name": "Arcane Estate: Rune Puzzles",
+      "description": "One logic puzzle a day, the same for every player, and a ruined estate that rises as you solve it. Every puzzle is solvable by reasoning alone.",
+      "url": "https://www.arcaneestategame.com/",
+      "genre": "Puzzle",
+      "gamePlatform": ["iOS", "Android"],
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "GameApplication",
+      "publisher": { "@id": "https://brewsterwickershampublications.com/#organization" },
+      "installUrl": [
+        "https://apps.apple.com/us/app/arcane-estate-rune-puzzles/id6817651417",
+        "https://play.google.com/store/apps/details?id=com.arcaneestate.game"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/us/app/arcane-estate-rune-puzzles/id6817651417",
+        "https://play.google.com/store/apps/details?id=com.arcaneestate.game"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
     }
   ]
 }
@@ -250,6 +368,16 @@ footer{padding:38px 0 58px; font-size:14.5px; color:var(--muted)}
 footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
 footer a{color:var(--muted)}
 
+/* ---- Network: the same list of our sites and Amazon listings on every site ---- */
+.network{display:block; width:100%; margin:0 0 10px; padding-bottom:28px; border-bottom:1px solid var(--line); font-size:inherit}
+.network h2{font-size:19.5px; color:var(--ink); margin:0 0 18px}
+.network-cols{display:grid; gap:10px 36px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.network h3{font:600 12.5px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            text-transform:uppercase; letter-spacing:.16em; color:var(--muted); margin:0 0 10px}
+.network ul{list-style:none; margin:0; padding:0}
+.network li{margin:0 0 8px; line-height:1.5}
+.network a{color:var(--accent); text-decoration:underline}
+
 @media (max-width:620px){
   .hero{padding:54px 0 46px}
   section{padding:46px 0}
@@ -265,7 +393,7 @@ footer a{color:var(--muted)}
 <header>
   <div class="wrap">
     <a class="brand" href="/">
-      <img src="logo.jpg" alt="Brewster Wickersham Publications" width="512" height="279">
+      <img src="logo.jpg" alt="Brewster Wickersham Publications" width="512" height="279" fetchpriority="high">
     </a>
     <nav>
       <a href="#books">Books</a>
@@ -273,6 +401,7 @@ footer a{color:var(--muted)}
       <a href="#authors">Authors</a>
       <a href="#friends">Friends</a>
       <a href="#contact">Contact</a>
+      <a href="#network">Our sites</a>
     </nav>
   </div>
 </header>
@@ -281,7 +410,7 @@ footer a{color:var(--muted)}
 
 <div class="hero">
   <div class="wrap">
-    <h1>Tools for living well with chronic pain.</h1>
+    <h1>Books and apps for living well with chronic pain.</h1>
     <p class="lede">An independent press publishing books, workbooks, and
       applications for people living with chronic pain and rheumatic disease
       &mdash; written from experience and guided by expertise, by clinicians who
@@ -296,10 +425,12 @@ footer a{color:var(--muted)}
 <section id="books">
   <div class="wrap">
     <p class="eyebrow">The Resilient Path</p>
-    <h2>Books</h2>
+    <h2>Books on living with chronic pain</h2>
     <p class="section-intro">Resilience is not a personality trait you either
       have or lack. It is a set of skills &mdash; they can be learned, practiced,
-      and rebuilt after setbacks.</p>
+      and rebuilt after setbacks. The book, the workbook and the companion app
+      have their own home at
+      <a href="https://theresilientpathbook.com/" target="_blank" rel="noopener">theresilientpathbook.com</a>.</p>
 
     <article class="product">
       <div class="product-head">
@@ -326,6 +457,7 @@ footer a{color:var(--muted)}
       <div class="actions">
         <a class="btn solid js-amazon" data-book="book" href="https://www.amazon.com/dp/B0HJ1NMXLL" target="_blank" rel="noopener">Paperback on Amazon</a>
         <a class="btn js-amazon" data-book="kindle" href="https://www.amazon.com/dp/B0HHKKSR3D" target="_blank" rel="noopener">Kindle edition</a>
+        <a class="btn" href="https://theresilientpathbook.com/" target="_blank" rel="noopener">theresilientpathbook.com</a>
       </div>
     </article>
 
@@ -365,9 +497,9 @@ footer a{color:var(--muted)}
 <section id="apps">
   <div class="wrap">
     <p class="eyebrow">Applications</p>
-    <h2>Apps</h2>
-    <p class="section-intro">Digital companions that carry the same approach
-      beyond the page. Built by Wickersham Development Group, LLC.</p>
+    <h2>Apps and games</h2>
+    <p class="section-intro">Digital companions and games that carry the same
+      approach beyond the page. Built by Wickersham Development Group, LLC.</p>
 
     <article class="product">
       <div class="product-head">
@@ -388,8 +520,8 @@ footer a{color:var(--muted)}
       </ul>
       <p class="price">Free to download &middot; 7-day free trial, then <strong>$3.99/month</strong></p>
       <div class="actions">
-        <a class="btn solid" href="https://apps.apple.com/us/app/resilient-path/id6762085688">App&nbsp;Store</a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=resilient.path.app">Google&nbsp;Play</a>
+        <a class="btn solid" href="https://apps.apple.com/us/app/resilient-path/id6762085688" target="_blank" rel="noopener">App&nbsp;Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=resilient.path.app" target="_blank" rel="noopener">Google&nbsp;Play</a>
       </div>
     </article>
 
@@ -416,9 +548,9 @@ footer a{color:var(--muted)}
       </ul>
       <p class="price">Free to download &middot; 7-day free trial, then <strong>$6.99/month</strong> &middot; cancel anytime</p>
       <div class="actions">
-        <a class="btn solid" href="https://apps.apple.com/us/app/rheumcompanion-flare-tracker/id6784212388">App&nbsp;Store</a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.rheumcompanion.app">Google&nbsp;Play</a>
-        <a class="btn" href="https://www.rheumcompanion.com">rheumcompanion.com</a>
+        <a class="btn solid" href="https://apps.apple.com/us/app/rheumcompanion-flare-tracker/id6784212388" target="_blank" rel="noopener">App&nbsp;Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.rheumcompanion.app" target="_blank" rel="noopener">Google&nbsp;Play</a>
+        <a class="btn" href="https://www.rheumcompanion.com/" target="_blank" rel="noopener">rheumcompanion.com</a>
       </div>
     </article>
 
@@ -447,9 +579,9 @@ footer a{color:var(--muted)}
         (<strong>$3.99/month</strong> or <strong>$34.99/year</strong>, 7-day free trial)
         adds unlimited lives and comfort perks &mdash; every level is playable without it</p>
       <div class="actions">
-        <a class="btn solid" href="https://apps.apple.com/us/app/soothequest/id6791187064">App&nbsp;Store</a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest">Google&nbsp;Play</a>
-        <a class="btn" href="https://www.soothequest.com">soothequest.com</a>
+        <a class="btn solid" href="https://apps.apple.com/us/app/soothequest/id6791187064" target="_blank" rel="noopener">App&nbsp;Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.brewsterwickershampublications.soothequest" target="_blank" rel="noopener">Google&nbsp;Play</a>
+        <a class="btn" href="https://www.soothequest.com/" target="_blank" rel="noopener">soothequest.com</a>
       </div>
     </article>
 
@@ -472,8 +604,8 @@ footer a{color:var(--muted)}
       </ul>
       <p class="price">Free to play &middot; optional one-time purchases only, <strong>no subscriptions</strong></p>
       <div class="actions">
-        <a class="btn solid" href="https://play.google.com/store/apps/details?id=com.wickersham.lumina">Google&nbsp;Play</a>
-        <a class="btn" href="https://www.luminacloudgarden.com">luminacloudgarden.com</a>
+        <a class="btn solid" href="https://play.google.com/store/apps/details?id=com.wickersham.lumina" target="_blank" rel="noopener">Google&nbsp;Play</a>
+        <a class="btn" href="https://www.luminacloudgarden.com/" target="_blank" rel="noopener">luminacloudgarden.com</a>
       </div>
     </article>
 
@@ -499,9 +631,9 @@ footer a{color:var(--muted)}
       <p class="price">Free to play with ads &middot; optional Warden&rsquo;s Patronage removes them
         (<strong>$3.99/month</strong>, <strong>$29.99/year</strong>, or <strong>$24.99</strong> once)</p>
       <div class="actions">
-        <a class="btn solid" href="https://apps.apple.com/us/app/arcane-estate-rune-puzzles/id6817651417">App&nbsp;Store</a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.arcaneestate.game">Google&nbsp;Play</a>
-        <a class="btn" href="https://www.arcaneestategame.com">arcaneestategame.com</a>
+        <a class="btn solid" href="https://apps.apple.com/us/app/arcane-estate-rune-puzzles/id6817651417" target="_blank" rel="noopener">App&nbsp;Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.arcaneestate.game" target="_blank" rel="noopener">Google&nbsp;Play</a>
+        <a class="btn" href="https://www.arcaneestategame.com/" target="_blank" rel="noopener">arcaneestategame.com</a>
       </div>
     </article>
   </div>
@@ -522,6 +654,7 @@ footer a{color:var(--muted)}
           brings both clinical expertise and personal experience to the
           understanding of chronic pain.</p>
         <p>Outside of medicine he is a rockhound and a fisherman.</p>
+        <p><a href="https://www.amazon.com/stores/author/B004TYIEZQ" target="_blank" rel="noopener">Dr.&nbsp;Wickersham&rsquo;s books on his Amazon author page</a></p>
         <p class="creds" style="margin:14px 0 0">Contact Dr.&nbsp;Wickersham:
           <a href="mailto:pendleton@brewsterwickershampublications.com">pendleton@brewsterwickershampublications.com</a>
         </p>
@@ -549,7 +682,7 @@ footer a{color:var(--muted)}
 
     <div class="friends">
       <div class="friend">
-        <img class="friend-logo" src="friend-restore.png" alt="Restore Biosciences">
+        <img class="friend-logo" src="friend-restore.png" alt="Restore Biosciences logo" width="222" height="300" loading="lazy" decoding="async">
         <h3>Restore Biosciences</h3>
         <p class="creds">takerestore.com &middot; Curated supplements and medical supplies</p>
         <p>Walk into a big-box pharmacy and you face a wall of supplement bottles
@@ -576,11 +709,11 @@ footer a{color:var(--muted)}
             methotrexate, or a blood thinner.</p>
         </div>
 
-        <p><a href="https://takerestore.com">Visit takerestore.com</a></p>
+        <p><a href="https://takerestore.com" target="_blank" rel="noopener">Visit takerestore.com</a></p>
       </div>
 
       <div class="friend">
-        <img class="friend-logo" src="friend-ecates.png" alt="E. Cates Designs">
+        <img class="friend-logo" src="friend-ecates.png" alt="E. Cates Designs logo" width="400" height="579" loading="lazy" decoding="async">
         <h3>E. Cates Designs</h3>
         <p class="creds">ecatesdesigns.square.site &middot; Handmade jewelry and gifts</p>
         <p>Eleanor Cates makes stylish jewelry and small gifts by hand &mdash; scarf
@@ -595,11 +728,11 @@ footer a{color:var(--muted)}
             or receives anything from purchases made there.</p>
         </div>
 
-        <p><a href="https://ecatesdesigns.square.site/">Visit ecatesdesigns.square.site</a></p>
+        <p><a href="https://ecatesdesigns.square.site/" target="_blank" rel="noopener">Visit ecatesdesigns.square.site</a></p>
       </div>
 
       <div class="friend">
-        <img class="friend-logo on-light" src="friend-casaready.png" alt="Casa Ready Medical Concierge">
+        <img class="friend-logo on-light" src="friend-casaready.png" alt="Casa Ready Medical Concierge logo" width="700" height="727" loading="lazy" decoding="async">
         <h3>Casa Ready Medical Concierge</h3>
         <p class="creds">casareadymedical.com &middot; Home preparation for surgery recovery and new diagnoses</p>
         <p>Casa Ready helps families get a home ready for surgery recovery, a hospital
@@ -619,7 +752,7 @@ footer a{color:var(--muted)}
             supplement, particularly if you take a biologic, methotrexate, or a blood thinner.</p>
         </div>
 
-        <p><a href="https://casareadymedical.com/">Visit casareadymedical.com</a></p>
+        <p><a href="https://casareadymedical.com/" target="_blank" rel="noopener">Visit casareadymedical.com</a></p>
       </div>
 
       <div class="friend">
@@ -630,7 +763,7 @@ footer a{color:var(--muted)}
           symptom management, mental health, lifelong learning, style and home organization,
           with a preference for flexible thinking over absolutes.</p>
 
-        <p><a href="https://themostlyfactor.substack.com/about">Visit The Mostly Factor</a></p>
+        <p><a href="https://themostlyfactor.substack.com/about" target="_blank" rel="noopener">Visit The Mostly Factor</a></p>
       </div>
     </div>
   </div>
@@ -658,8 +791,34 @@ footer a{color:var(--muted)}
 
 <footer>
   <div class="wrap">
+    <!-- NETWORK — the same list of our sites and Amazon listings appears on every
+         Brewster Wickersham Publications site. Keep the wording and links in step. -->
+    <nav class="network" id="network" aria-labelledby="network-title">
+      <h2 id="network-title">From Brewster Wickersham Publications</h2>
+      <div class="network-cols">
+        <div>
+          <h3>Our websites</h3>
+          <ul>
+            <li><a href="https://brewsterwickershampublications.com/">Brewster Wickersham Publications</a> &mdash; the publisher</li>
+            <li><a href="https://theresilientpathbook.com/" target="_blank" rel="noopener">The Resilient Path</a> &mdash; chronic pain book, workbook and app</li>
+            <li><a href="https://www.arcaneestategame.com/" target="_blank" rel="noopener">Arcane Estate: Rune Puzzles</a> &mdash; a daily logic puzzle game</li>
+            <li><a href="https://www.luminacloudgarden.com/" target="_blank" rel="noopener">Lumina: The Cloud Garden</a> &mdash; a gentle sky-garden game</li>
+            <li><a href="https://www.soothequest.com/" target="_blank" rel="noopener">SootheQuest</a> &mdash; a relaxing match-3 puzzle app</li>
+          </ul>
+        </div>
+        <div>
+          <h3>On Amazon</h3>
+          <ul>
+            <li><a href="https://www.amazon.com/stores/author/B004TYIEZQ" target="_blank" rel="noopener">Pendleton Wickersham&rsquo;s Amazon author store</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HJ1NMXLL" target="_blank" rel="noopener">The Resilient Path paperback</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HHKKSR3D" target="_blank" rel="noopener">The Resilient Path Kindle edition</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HHLCSVBJ" target="_blank" rel="noopener">The Resilient Path Workbook paperback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div>&copy; <span id="year">2026</span> Brewster Wickersham Publications</div>
-    <div><a href="https://theresilientpathbook.com/">theresilientpathbook.com</a></div>
+    <div><a href="/review/">Leave a review</a></div>
   </div>
 </footer>
 

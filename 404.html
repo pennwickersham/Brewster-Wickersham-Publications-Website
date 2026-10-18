@@ -5,40 +5,115 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Page not found &middot; Brewster Wickersham Publications</title>
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#f8f4ea">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<!-- GitHub Pages serves this file for a bad URL at any depth, so every link and
+     image here is root-relative. Colours are the home page's tokens. -->
 <style>
 :root{
-  --bg:#faf8f4; --ink:#1b1a17; --muted:#6a655c; --accent:#2f6b63;
+  --bg:#f8f4ea; --surface:#ffffff; --ink:#1a2b4a; --muted:#67614f; --line:#e2dac7; --accent:#8a6a2b;
 }
 @media (prefers-color-scheme:dark){
-  :root{ --bg:#15171a; --ink:#e9e6e0; --muted:#9d978c; --accent:#6fbfb2; }
+  :root{ --bg:#12161f; --surface:#1a1f2b; --ink:#e8e4d9; --muted:#9a9484; --line:#2b3240; --accent:#d4af6a; }
 }
 *{box-sizing:border-box}
 body{
-  margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
-  display:flex; align-items:center; justify-content:center; text-align:center;
+  margin:0; background:var(--bg); color:var(--ink);
   font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  padding:24px;
+  -webkit-font-smoothing:antialiased;
 }
-h1{
-  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-  font-size:clamp(28px,5vw,40px); font-weight:600; margin:0 0 14px; letter-spacing:-.015em;
+h1,h2{
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  font-weight:600; letter-spacing:-.015em; line-height:1.22;
 }
-p{color:var(--muted); margin:0 0 28px; max-width:44ch}
-a.btn{
-  display:inline-block; padding:11px 22px; border-radius:7px; text-decoration:none;
-  border:1px solid var(--accent); color:var(--accent);
+a{color:var(--accent)}
+a:hover{text-decoration:none}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
+img{max-width:100%; height:auto; display:block}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{padding-top:20px; padding-bottom:20px}
+.brand{display:inline-block; line-height:0; border-radius:6px; overflow:hidden}
+.brand img{width:190px; height:auto}
+main{padding:64px 0 56px; border-bottom:1px solid var(--line)}
+h1{font-size:clamp(30px,5vw,42px); margin:0 0 14px}
+.lede{color:var(--muted); margin:0 0 28px; max-width:52ch}
+.actions{display:flex; gap:11px; flex-wrap:wrap}
+.btn{
+  display:inline-block; padding:11px 20px; border-radius:7px; text-decoration:none;
+  font-size:15.5px; border:1px solid var(--accent); color:var(--accent);
+  transition:background .15s, color .15s;
 }
-a.btn:hover{background:var(--accent); color:var(--bg)}
+.btn:hover{background:var(--accent); color:var(--bg)}
+.btn.solid{background:var(--accent); color:var(--bg)}
+.btn.solid:hover{opacity:.87}
+footer{padding:38px 0 58px; font-size:14.5px; color:var(--muted)}
+footer a{color:var(--muted)}
+.network h2{font-size:19.5px; color:var(--ink); margin:0 0 18px}
+.network-cols{display:grid; gap:10px 36px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.network h3{font:600 12.5px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            text-transform:uppercase; letter-spacing:.16em; color:var(--muted); margin:0 0 10px}
+.network ul{list-style:none; margin:0; padding:0}
+.network li{margin:0 0 8px; line-height:1.5}
+.network a{color:var(--accent)}
+@media (max-width:620px){ main{padding:46px 0 40px} .brand img{width:160px} }
 </style>
 </head>
 <body>
-  <div>
-    <h1>Page not found</h1>
-    <p>That page doesn&rsquo;t exist &mdash; it may have moved, or the link may
-       have been mistyped.</p>
-    <a class="btn" href="/">Return home</a>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/logo.jpg" alt="Brewster Wickersham Publications" width="512" height="279">
+    </a>
   </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Page not found</h1>
+    <p class="lede">That page doesn&rsquo;t exist &mdash; it may have moved, or the link may
+      have been mistyped. These are the places most people are looking for:</p>
+    <div class="actions">
+      <a class="btn solid" href="/">Return home</a>
+      <a class="btn" href="/#books">Books</a>
+      <a class="btn" href="/#apps">Apps and games</a>
+      <a class="btn" href="/review/">Leave a review</a>
+      <a class="btn" href="/#contact">Contact</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <!-- NETWORK — the same list of our sites and Amazon listings appears on every
+         Brewster Wickersham Publications site. Keep the wording and links in step. -->
+    <nav class="network" id="network" aria-labelledby="network-title">
+      <h2 id="network-title">From Brewster Wickersham Publications</h2>
+      <div class="network-cols">
+        <div>
+          <h3>Our websites</h3>
+          <ul>
+            <li><a href="/">Brewster Wickersham Publications</a> &mdash; the publisher</li>
+            <li><a href="https://theresilientpathbook.com/" target="_blank" rel="noopener">The Resilient Path</a> &mdash; chronic pain book, workbook and app</li>
+            <li><a href="https://www.arcaneestategame.com/" target="_blank" rel="noopener">Arcane Estate: Rune Puzzles</a> &mdash; a daily logic puzzle game</li>
+            <li><a href="https://www.luminacloudgarden.com/" target="_blank" rel="noopener">Lumina: The Cloud Garden</a> &mdash; a gentle sky-garden game</li>
+            <li><a href="https://www.soothequest.com/" target="_blank" rel="noopener">SootheQuest</a> &mdash; a relaxing match-3 puzzle app</li>
+          </ul>
+        </div>
+        <div>
+          <h3>On Amazon</h3>
+          <ul>
+            <li><a href="https://www.amazon.com/stores/author/B004TYIEZQ" target="_blank" rel="noopener">Pendleton Wickersham&rsquo;s Amazon author store</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HJ1NMXLL" target="_blank" rel="noopener">The Resilient Path paperback</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HHKKSR3D" target="_blank" rel="noopener">The Resilient Path Kindle edition</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HHLCSVBJ" target="_blank" rel="noopener">The Resilient Path Workbook paperback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

@@ -8,7 +8,8 @@ dependencies — edit the HTML and push.
 | File | Purpose |
 |---|---|
 | `index.html` | The entire site. All content and styling live here. |
-| `logo.jpg` | The BWP crest. Used in the header and as the social share image. |
+| `logo.jpg` | The BWP crest, used in the header and as the structured-data logo. (The file is PNG data despite the `.jpg` name; other sites link to this URL, so it keeps its name.) |
+| `og-image.jpg` | 1200×630 social share image (the crest on its cream background), used by every page's Open Graph and Twitter tags. |
 | `favicon.png`, `favicon.ico`, `apple-touch-icon.png` | Browser-tab and search-result icon, cropped from the crest in `logo.jpg`. |
 | `404.html` | Shown for bad URLs. |
 | `arcane-estate/` | The Arcane Estate's home, support and privacy pages, linked from its App Store and Google Play listings. Kept in step with `docs/site` in the app's repo. |
@@ -16,7 +17,7 @@ dependencies — edit the HTML and push.
 | `CNAME` | Tells GitHub Pages to serve the custom domain. **Do not delete.** |
 | `.nojekyll` | Stops GitHub from running Jekyll over the files. |
 | `robots.txt` | Search-engine directives; points at the sitemap. |
-| `sitemap.xml` | Single-page sitemap. Update `lastmod` on major changes. |
+| `sitemap.xml` | Every indexable page at its canonical URL. Update a page's `lastmod` when its content changes. |
 | `.gitignore` | OS and editor cruft. |
 
 ## Editing
@@ -34,6 +35,12 @@ live and linked. Arcane Estate is on both stores (App Store `id6817651417`) and 
 arcaneestategame.com. Lumina is on Google Play only so far (site: luminacloudgarden.com); when its
 App Store listing goes live, add an `App Store` button to its card and update the card's `sub` line.
 
+**Network footer.** Every page ends with a "From Brewster Wickersham Publications" block
+linking to the other sites (theresilientpathbook.com, arcaneestategame.com,
+luminacloudgarden.com, soothequest.com) and to the Amazon author store and book listings. The
+same block, with the same wording, is on each of those sites. If a site or listing URL changes,
+change it in every copy (`grep -rl 'id="network"' .`) and on the other sites.
+
 Colors are the CSS variables at the top of the `<style>` block, drawn from the
 logo: navy `#1a2b4a`, gold `#8a6a2b`, cream `#f8f4ea`. Changing those re-skins
 the whole site, light and dark modes together.
@@ -46,9 +53,9 @@ the whole site, light and dark modes together.
 - **Book subtitle.** This site and theresilientpathbook.com use *Managing Life
   with Chronic Pain*. The SootheQuest App Store listing calls it *Modern
   Strategies for Living with Chronic Pain*. One of them is stale.
-- **Share image.** `logo.jpg` (512×279) is serving as the Open Graph image.
-  A purpose-made 1200×630 version would look better when the site is shared
-  on social platforms.
+- **Share image.** `og-image.jpg` is the crest enlarged onto a 1200×630 canvas.
+  A purpose-made design (with the book cover, say) would look sharper when the
+  site is shared on social platforms.
 
 ## Old store addresses
 

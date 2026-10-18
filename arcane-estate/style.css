@@ -8,3 +8,10 @@ ul{padding-left:22px}
 img{max-width:100%;height:auto;border-radius:12px}
 a{color:#2f4a8f}
 footer{margin-top:44px;padding-top:16px;border-top:1px solid #dcdde6;color:#666a80;font-size:.9rem}
+.network{margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid #dcdde6;color:#666a80}
+.network h2{margin-top:0;color:#1b1d2b}
+.network h3{font:600 .8rem/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-transform:uppercase;letter-spacing:.14em;margin:18px 0 8px}
+.network ul{list-style:none;padding:0;margin:0}
+.network li{margin:0 0 6px}
+.network a{margin-right:0}
+footer p{margin:0}
