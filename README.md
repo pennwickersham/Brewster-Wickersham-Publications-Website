@@ -8,11 +8,11 @@ dependencies — edit the HTML and push.
 | File | Purpose |
 |---|---|
 | `index.html` | The entire site. All content and styling live here. |
-| `logo.jpg` | The BWP crest, used in the header and as the structured-data logo. (The file is PNG data despite the `.jpg` name; other sites link to this URL, so it keeps its name.) |
+| `logo.jpg` | The BWP crest (512×279 JPEG), used in the header and as the structured-data logo. theresilientpathbook.com links to this exact URL, so keep the name. |
 | `og-image.jpg` | 1200×630 social share image (the crest on its cream background), used by every page's Open Graph and Twitter tags. |
 | `favicon.png`, `favicon.ico`, `apple-touch-icon.png` | Browser-tab and search-result icon, cropped from the crest in `logo.jpg`. |
 | `404.html` | Shown for bad URLs. |
-| `arcane-estate/` | The Arcane Estate's home, support and privacy pages, linked from its App Store and Google Play listings. Kept in step with `docs/site` in the app's repo. |
+| `arcane-estate/` | The Arcane Estate's home, support and privacy pages, linked from its App Store and Google Play listings. Kept in step with `docs/site` in the app's repo. The home page's canonical is www.arcaneestategame.com, the game's own site, so it is not in the sitemap. `play/` is written by the app repo's CI. |
 | `products/`, `collections/`, `pages/`, `blogs/`, `policies/` | Redirects from the old Shopify store's addresses. See below. |
 | `CNAME` | Tells GitHub Pages to serve the custom domain. **Do not delete.** |
 | `.nojekyll` | Stops GitHub from running Jekyll over the files. |
